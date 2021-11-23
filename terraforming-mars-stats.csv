@@ -1,0 +1,407 @@
+player,game_id,date,num_players,board,prelude,venus,colonies,turmoil,bgg,corporation,corporation_origin,terraform_rating,num_greeneries,num_cities,num_colonies,num_greenery_adjancies,card_points,award_1_name,award_1_funder,award_2_name,award_2_funder,award_3_name,award_3_funder,milestone_1_name,milestone_2_name,milestone_3_name,total_points,total_percent_of_points,is_winner
+Ben,-2774849594366835101,2021-11-16,3,Tharsis,1,0,0,1,0,Terralabs Research,Turmoil,26,8,1,,1,17,Miner ,Tony,Scientist ,Matt,Landlord ,Tony,Builder ,Terraformer ,Planner ,59,26.69683258,0
+Matt,-2774849594366835101,2021-11-16,3,Tharsis,1,0,0,1,0,Saturn Systems,Base,37,0,5,,6,18,Miner ,Tony,Scientist ,Matt,Landlord ,Tony,Builder ,Terraformer ,Planner ,76,34.38914027,0
+Tony,-2774849594366835101,2021-11-16,3,Tharsis,1,0,0,1,0,Cheung Shing Mars,Prelude,29,6,3,,7,30,Miner ,Tony,Scientist ,Matt,Landlord ,Tony,Builder ,Terraformer ,Planner ,86,38.91402715,1
+Ben,-6050872921229360578,2021-11-12,3,Hellas,1,1,0,0,0,Valley Trust,Prelude,45,6,4,,11,51,Venuphile ,Matt,Space Baron ,Matt,Contractor ,Ben,Diversifier ,Tactician ,Rim Settler ,130,44.21768707,1
+Matt,-6050872921229360578,2021-11-12,3,Hellas,1,1,0,0,0,Vitor,Prelude,34,2,6,,8,39,Venuphile ,Matt,Space Baron ,Matt,Contractor ,Ben,Diversifier ,Tactician ,Rim Settler ,100,34.01360544,0
+Katie,-6050872921229360578,2021-11-12,3,Hellas,1,1,0,0,0,Point Luna,Prelude,38,4,1,,3,15,Venuphile ,Matt,Space Baron ,Matt,Contractor ,Ben,Diversifier ,Tactician ,Rim Settler ,64,21.76870748,0
+Ben,-8600229440015015343,2021-11-11,2,Elysium,1,1,1,0,0,Point Luna,Prelude,49,9,6,3,14,41,Celebrity ,Ben,Benefactor ,Matt,Estate Dealer ,Matt,Specialist ,Legend ,Ecologist ,138,56.09756098,1
+Matt,-8600229440015015343,2021-11-11,2,Elysium,1,1,1,0,0,Manutech,Venus,49,4,5,2,7,33,Celebrity ,Ben,Benefactor ,Matt,Estate Dealer ,Matt,Specialist ,Legend ,Ecologist ,108,43.90243902,0
+Ben,-4149238834411456591,2021-11-10,2,Tharsis,1,1,1,0,0,Inventrix,Base,54,10,7,2,21,52,Miner ,Matt,Landlord ,Ben,Thermalist ,Matt,Hoverlord ,Planner ,Builder ,152,58.91472868,1
+Matt,-4149238834411456591,2021-11-10,2,Tharsis,1,1,1,0,0,Vitor,Prelude,39,4,3,3,3,45,Miner ,Matt,Landlord ,Ben,Thermalist ,Matt,Hoverlord ,Planner ,Builder ,106,41.08527132,0
+Ben,-5895431494804103212,2021-10-17,3,Elysium,1,0,1,0,0,Phobolog,Base,45,7,5,3,18,15,Industrialist ,Ben,Estate Dealer ,Ben,Benefactor ,Ben,Ecologist ,Generalist ,Legend ,94,37.75100402,1
+Matt,-5895431494804103212,2021-10-17,3,Elysium,1,0,1,0,0,Tharsis Republic,Base,33,0,3,,2,28,Industrialist ,Ben,Estate Dealer ,Ben,Benefactor ,Ben,Ecologist ,Generalist ,Legend ,75,30.12048193,0
+Tony,-5895431494804103212,2021-10-17,3,Elysium,1,0,1,0,0,Thorgate,Base,32,9,4,2,11,13,Industrialist ,Ben,Estate Dealer ,Ben,Benefactor ,Ben,Ecologist ,Generalist ,Legend ,80,32.12851406,0
+Tony,-7333511498666350736,2021-09-30,3,Hellas,1,1,0,0,0,Morning Star Inc,Venus,30,1,1,,1,30,Venuphile ,Tony,Contractor ,Matt,Excentric ,Tony,Diversifier ,Polar Explorer ,Tactician ,77,31.17408907,0
+Matt,-7333511498666350736,2021-09-30,3,Hellas,1,1,0,0,0,Mining Guild,Base,49,8,4,,14,4,Venuphile ,Tony,Contractor ,Matt,Excentric ,Tony,Diversifier ,Polar Explorer ,Tactician ,80,32.38866397,0
+Ben,-7333511498666350736,2021-09-30,3,Hellas,1,1,0,0,0,Robinson Industries,Prelude,32,10,6,,20,12,Venuphile ,Tony,Contractor ,Matt,Excentric ,Tony,Diversifier ,Polar Explorer ,Tactician ,90,36.43724696,1
+Matt,-1943945609903258829,2021-09-22,3,Tharsis,1,0,1,1,0,Septem Tribus,Turmoil,36,9,6,,11,11,Miner ,Matt,Landlord ,Matt,Scientist ,Tony,Terraformer ,Builder ,Mayor ,89,34.90196078,0
+Ben,-1943945609903258829,2021-09-22,3,Tharsis,1,0,1,1,0,Phobolog,Base,31,3,5,,7,25,Miner ,Matt,Landlord ,Matt,Scientist ,Tony,Terraformer ,Builder ,Mayor ,70,27.45098039,0
+Tony,-1943945609903258829,2021-09-22,3,Tharsis,1,0,1,1,0,Aridor,Colonies,33,1,1,,1,51,Miner ,Matt,Landlord ,Matt,Scientist ,Tony,Terraformer ,Builder ,Mayor ,96,37.64705882,1
+Ben,-2630278498439894024,2021-09-13,2,Elysium,1,0,0,0,0,Teractor,Base,43,14,7,,17,22,Benefactor ,Ben,Dessert Settler ,Matt,Celebrity ,Matt,Specialist ,Generalist ,Tycoon ,116,46.96356275,0
+Matt,-2630278498439894024,2021-09-13,2,Elysium,1,0,0,0,0,Saturn Systems,Base,42,6,8,,16,57,Benefactor ,Ben,Dessert Settler ,Matt,Celebrity ,Matt,Specialist ,Generalist ,Tycoon ,131,53.03643725,1
+Ben,-4835264363286034524,2021-08-27,2,Elysium,1,0,0,1,0,Thorgate,Base,32,7,9,,20,42,Industrialist ,Ben,Dessert Settler ,Tony,Celebrity ,Ben,Specialist ,Ecologist ,Legend ,116,54.20560748,1
+Tony,-4835264363286034524,2021-08-27,2,Elysium,1,0,0,1,0,Lakefront Resorts,Turmoil,36,13,6,,19,15,Industrialist ,Ben,Dessert Settler ,Tony,Celebrity ,Ben,Specialist ,Ecologist ,Legend ,98,45.79439252,0
+Ben,4638512798360643426,2021-07-29,3,Elysium,1,1,0,0,0,Cheung Shing Mars,Prelude,46,4,3,,2,33,Venuphile ,Matt,Estate Dealer ,Tony, Industrialist ,Matt,Specialist ,Generalist ,Ecologist ,101,35.9430605,1
+Tony,4638512798360643426,2021-07-29,3,Elysium,1,1,0,0,0,Saturn Systems,Base,32,1,5,,4,41,Venuphile ,Matt,Estate Dealer ,Tony, Industrialist ,Matt,Specialist ,Generalist ,Ecologist ,85,30.24911032,0
+Matt,4638512798360643426,2021-07-29,3,Elysium,1,1,0,0,0,Manutech,Venus,38,5,4,,3,34,Venuphile ,Matt,Estate Dealer ,Tony, Industrialist ,Matt,Specialist ,Generalist ,Ecologist ,95,33.80782918,0
+Pat,-431061223942347716,2021-07-22,3,Tharsis,1,0,1,0,0,Saturn Systems,Base,40,4,2,3,6,24,Scientist ,Matt,Miner ,Pat,Baker ,Pat,Mayor ,Planner ,Builder ,81,32.01581028,0
+Matt,-431061223942347716,2021-07-22,3,Tharsis,1,0,1,0,0,Vitor,Prelude,23,1,1,3,0,36,Scientist ,Matt,Miner ,Pat,Baker ,Pat,Mayor ,Planner ,Builder ,70,27.66798419,0
+Ben,-431061223942347716,2021-07-22,3,Tharsis,1,0,1,0,0,Phobolog,Base,44,6,3,3,8,25,Scientist ,Matt,Miner ,Pat,Baker ,Pat,Mayor ,Planner ,Builder ,102,40.31620553,1
+Matt,1480102015546597871,2021-06-04,4,Elysium,1,0,0,0,0,Vitor,Prelude,25,5,2,,6,22,Celebrity ,Matt,Estate Dealer ,Tony,Industrialist ,Tom,Specialist ,Ecologist ,Generalist ,65,23.72262774,0
+Ben,1480102015546597871,2021-06-04,4,Elysium,1,0,0,0,0,Valley Trust,Prelude,29,5,3,,7,19,Celebrity ,Matt,Estate Dealer ,Tony,Industrialist ,Tom,Specialist ,Ecologist ,Generalist ,67,24.45255474,0
+Tom,1480102015546597871,2021-06-04,4,Elysium,1,0,0,0,0,Mining Guild,Base,34,1,1,,2,6,Celebrity ,Matt,Estate Dealer ,Tony,Industrialist ,Tom,Specialist ,Ecologist ,Generalist ,53,19.34306569,0
+Tony,1480102015546597871,2021-06-04,4,Elysium,1,0,0,0,0,Tharsis Republic,Base,38,10,7,,17,7,Celebrity ,Matt,Estate Dealer ,Tony,Industrialist ,Tom,Specialist ,Ecologist ,Generalist ,89,32.48175182,1
+Stephen,-6310145593126614123,2021-05-31,2,Tharsis,1,0,0,0,0,Interplanetary Cinematics,Base,56,8,7,,18,10,Scientist ,UNKNOWN,Thermalist,UNKNOWN,Landlord,UNKNOWN,Planner,Mayor ,Builder,107,41.31274131,0
+Matt,-6310145593126614123,2021-05-31,2,Tharsis,1,0,0,0,0,Teractor,Base,51,11,7,,19,56,Scientist ,UNKNOWN,Thermalist,UNKNOWN,Landlord,UNKNOWN,Planner,Mayor ,Builder,152,58.68725869,1
+Matt,-4913982426773146444,2021-05-25,3,Tharsis,1,0,0,0,0,Robinson Industries,Prelude,39,4,0,,10,10,Banker ,stephen,Scientist ,katie,Miner ,katie,Mayor,Builder,Terraformer,73,36.68341709,1
+Stephen,-4913982426773146444,2021-05-25,3,Tharsis,1,0,0,0,0,United Nations Mars Initiative,Base,34,2,4,,2,11,Banker ,stephen,Scientist ,katie,Miner ,katie,Mayor,Builder,Terraformer,63,31.65829146,0
+Katie,-4913982426773146444,2021-05-25,3,Tharsis,1,0,0,0,0,Helion,Base,36,3,3,,5,7,Banker ,stephen,Scientist ,katie,Miner ,katie,Mayor,Builder,Terraformer,63,31.65829146,0
+Matt,345134636852670821,2021-05-25,4,Tharsis,1,0,0,0,0,Inventrix,Base,28,1,0,,0,10,Scientist ,Ben,Miner ,Matt,Landlord ,Meister,Gardener ,Mayor ,Builder ,49,18.99224806,0
+Ben,345134636852670821,2021-05-25,4,Tharsis,1,0,0,0,0,Teractor,Base,31,3,4,,8,19,Scientist ,Ben,Miner ,Matt,Landlord ,Meister,Gardener ,Mayor ,Builder ,70,27.13178295,0
+Meister,345134636852670821,2021-05-25,4,Tharsis,1,0,0,0,0,Ecoline,Base,36,11,3,,11,7,Scientist ,Ben,Miner ,Matt,Landlord ,Meister,Gardener ,Mayor ,Builder ,77,29.84496124,1
+Katie,345134636852670821,2021-05-25,4,Tharsis,1,0,0,0,0,Phobolog,Base,34,2,3,,4,17,Scientist ,Ben,Miner ,Matt,Landlord ,Meister,Gardener ,Mayor ,Builder ,62,24.03100775,0
+Tony,455287930655935247,2021-05-21,3,Tharsis,1,0,0,0,0,Inventrix,Base,31,1,3,,4,46,Miner ,Ben,Landlord ,Matt,Banker ,Matt,Builder ,Mayor ,Gardener ,82,33.33333333,0
+Matt,455287930655935247,2021-05-21,3,Tharsis,1,0,0,0,0,Interplanetary Cinematics,Base,37,6,5,,10,6,Miner ,Ben,Landlord ,Matt,Banker ,Matt,Builder ,Mayor ,Gardener ,86,34.95934959,1
+Ben,455287930655935247,2021-05-21,3,Tharsis,1,0,0,0,0,Vitor,Prelude,39,5,2,,8,17,Miner ,Ben,Landlord ,Matt,Banker ,Matt,Builder ,Mayor ,Gardener ,78,31.70731707,0
+Ben,-8777838801271237700,2021-04-23,3,Hellas,1,1,0,1,0,Robinson Industries,Prelude,42,6,5,,8,48,Venuphile ,Matt,Eccentric ,Tony,Contractor ,Matt,Diversifier ,Hoverlord ,Polar Explorer ,113,36.4516129,0
+Matt,-8777838801271237700,2021-04-23,3,Hellas,1,1,0,1,0,Terralabs Research,Turmoil,40,5,4,,8,19,Venuphile ,Matt,Eccentric ,Tony,Contractor ,Matt,Diversifier ,Hoverlord ,Polar Explorer ,82,26.4516129,0
+Tony,-8777838801271237700,2021-04-23,3,Hellas,1,1,0,1,0,Point Luna,Prelude,23,3,8,,11,61,Venuphile ,Matt,Eccentric ,Tony,Contractor ,Matt,Diversifier ,Hoverlord ,Polar Explorer ,115,37.09677419,1
+Tony,5718836865835623913,2021-04-16,4,Tharsis,1,1,1,1,0,Cheung Shing Mars,Prelude,28,3,4,3,3,24,Banker ,Ben,Venuphile ,Tony,Scientist ,Pat,Mayor ,Builder ,Terraformer ,70,26.21722846,0
+Ben,5718836865835623913,2021-04-16,4,Tharsis,1,1,1,1,0,Poseidon,Colonies,25,5,4,3,7,27,Banker ,Ben,Venuphile ,Tony,Scientist ,Pat,Mayor ,Builder ,Terraformer ,71,26.5917603,1
+Pat,5718836865835623913,2021-04-16,4,Tharsis,1,1,1,1,0,Utopia Invest,Turmoil,22,3,4,2,5,26,Banker ,Ben,Venuphile ,Tony,Scientist ,Pat,Mayor ,Builder ,Terraformer ,68,25.46816479,0
+Ezra,5718836865835623913,2021-04-16,4,Tharsis,1,1,1,1,0,Phobolog,Base,32,3,5,1,9,9,Banker ,Ben,Venuphile ,Tony,Scientist ,Pat,Mayor ,Builder ,Terraformer ,58,21.72284644,0
+Ben,927618686272721791,2021-04-09,3,Tharsis,1,0,0,0,0,Robinson Industries,Prelude,33,9,8,,22,18,Landlord ,Ben,Scientist ,Matt,Banker ,Matt,Planner ,Builder ,Mayor ,102,31.67701863,0
+Tony,927618686272721791,2021-04-09,3,Tharsis,1,0,0,0,0,Point Luna,Prelude,41,6,4,,8,48,Landlord ,Ben,Scientist ,Matt,Banker ,Matt,Planner ,Builder ,Mayor ,115,35.71428571,1
+Matt,927618686272721791,2021-04-09,3,Tharsis,1,0,0,0,0,Saturn Systems,Base,38,3,2,,4,56,Landlord ,Ben,Scientist ,Matt,Banker ,Matt,Planner ,Builder ,Mayor ,105,32.60869565,0
+Pat,-2356270160895047512,2021-03-24,4,Elysium,1,1,0,0,0,Viron,Venus,32,2,3,,5,26,Venuphile ,Matt,Benefactor ,Matt,Celebrity ,Matt,Specialist ,Legend ,Hoverlord ,77,25.83892617,0
+Ben,-2356270160895047512,2021-03-24,4,Elysium,1,1,0,0,0,Mining Guild,Base,39,7,3,,12,22,Venuphile ,Matt,Benefactor ,Matt,Celebrity ,Matt,Specialist ,Legend ,Hoverlord ,87,29.19463087,1
+Tony,-2356270160895047512,2021-03-24,4,Elysium,1,1,0,0,0,Valley Trust,Prelude,34,4,4,,6,13,Venuphile ,Matt,Benefactor ,Matt,Celebrity ,Matt,Specialist ,Legend ,Hoverlord ,64,21.47651007,0
+Matt,-2356270160895047512,2021-03-24,4,Elysium,1,1,0,0,0,Celestic,Venus,40,2,3,,3,5,Venuphile ,Matt,Benefactor ,Matt,Celebrity ,Matt,Specialist ,Legend ,Hoverlord ,70,23.48993289,0
+Pat,-402222102231096315,2021-03-13,3,Elysium,1,1,0,0,0,Valley Trust,Prelude,42,10,8,,18,33,Venuphile ,Matt,Benefactor ,Ben,Dessert Settler ,Pat,Specialist ,Hoverlord ,Ecologist ,118,35.64954683,1
+Matt,-402222102231096315,2021-03-13,3,Elysium,1,1,0,0,0,Morning Star Inc,Venus,43,7,4,,12,33,Venuphile ,Matt,Benefactor ,Ben,Dessert Settler ,Pat,Specialist ,Hoverlord ,Ecologist ,102,30.81570997,0
+Ben,-402222102231096315,2021-03-13,3,Elysium,1,1,0,0,0,Celestic,Venus,46,8,5,,12,31,Venuphile ,Matt,Benefactor ,Ben,Dessert Settler ,Pat,Specialist ,Hoverlord ,Ecologist ,111,33.5347432,0
+Ezra,-8020191458402424249,2021-02-22,3,Hellas,1,0,0,0,0,Credicor,Base,41,3,4,,11,19,Space Baron ,Matt,Cultivator ,Ben,Magnate ,Matt,Diversifier ,Energizer ,Tactician ,81,27.64505119,0
+Ben,-8020191458402424249,2021-02-22,3,Hellas,1,0,0,0,0,Robinson Industries,Prelude,37,11,5,,18,20,Space Baron ,Matt,Cultivator ,Ben,Magnate ,Matt,Diversifier ,Energizer ,Tactician ,95,32.42320819,0
+Matt,-8020191458402424249,2021-02-22,3,Hellas,1,0,0,0,0,Point Luna,Prelude,45,10,3,,7,33,Space Baron ,Matt,Cultivator ,Ben,Magnate ,Matt,Diversifier ,Energizer ,Tactician ,117,39.93174061,1
+Tony,1981586464736294472,2021-02-20,4,Elysium,1,0,1,0,0,Vitor,Prelude,27,0,3,4,3,31,Industrialist ,Tony,Estate Dealer ,Matt,Benefactor ,Pat,Generalist ,Ecologist ,Specialist ,68,26.66666667,1
+Pat,1981586464736294472,2021-02-20,4,Elysium,1,0,1,0,0,Helion,Base,37,3,3,0,6,6,Industrialist ,Tony,Estate Dealer ,Matt,Benefactor ,Pat,Generalist ,Ecologist ,Specialist ,62,24.31372549,0
+Ben,1981586464736294472,2021-02-20,4,Elysium,1,0,1,0,0,Point Luna,Prelude,30,7,1,1,3,16,Industrialist ,Tony,Estate Dealer ,Matt,Benefactor ,Pat,Generalist ,Ecologist ,Specialist ,63,24.70588235,0
+Matt,1981586464736294472,2021-02-20,4,Elysium,1,0,1,0,0,Valley Trust,Prelude,29,3,2,2,4,14,Industrialist ,Tony,Estate Dealer ,Matt,Benefactor ,Pat,Generalist ,Ecologist ,Specialist ,62,24.31372549,0
+Matt,-3535715416332743351,2021-02-15,3,Hellas,0,0,0,1,0,Helion,Base,42,3,4,0,7,7,Contractor ,Ezra,Magnate ,Matt,Tactician ,Ezra,Diversifier ,Rim Settler ,Greeneries,66,28.44827586,0
+Tony,-3535715416332743351,2021-02-15,3,Hellas,0,0,0,1,0,Teractor,Base,25,2,2,0,3,45,Contractor ,Ezra,Magnate ,Matt,Tactician ,Ezra,Diversifier ,Rim Settler ,Greeneries,80,34.48275862,0
+Ezra,-3535715416332743351,2021-02-15,3,Hellas,0,0,0,1,0,Terralabs Research,Turmoil,28,9,3,0,14,15,Contractor ,Ezra,Magnate ,Matt,Tactician ,Ezra,Diversifier ,Rim Settler ,Greeneries,86,37.06896552,1
+Ben,-2339916485943426850,2021-01-31,3,Tharsis,1,0,1,0,0,Mining Guild,Base,34,8,6,2,19,17,Miner ,Ben,Thermalist ,Matt,Landlord ,Ben,Builder ,Planner ,Mayor ,103,35.395189,0
+Tony,-2339916485943426850,2021-01-31,3,Tharsis,1,0,1,0,0,Poseidon,Colonies,41,6,5,4,16,32,Miner ,Ben,Thermalist ,Matt,Landlord ,Ben,Builder ,Planner ,Mayor ,104,35.73883162,1
+Matt,-2339916485943426850,2021-01-31,3,Tharsis,1,0,1,0,0,Cheung Shing Mars,Prelude,40,7,4,3,14,21,Miner ,Ben,Thermalist ,Matt,Landlord ,Ben,Builder ,Planner ,Mayor ,84,28.86597938,0
+Ben,879715239562272217,2021-01-21,3,Tharsis,1,1,0,0,0,Celestic,Venus,33,4,5,,13,42,Landlord ,Tony,Miner ,Ben,Venuphile ,Matt,Hoverlord ,Mayor ,Builder ,106,35.45150502,1
+Tony,879715239562272217,2021-01-21,3,Tharsis,1,1,0,0,0,Tharsis Republic,Base,32,8,7,,17,21,Landlord ,Tony,Miner ,Ben,Venuphile ,Matt,Hoverlord ,Mayor ,Builder ,95,31.77257525,0
+Matt,879715239562272217,2021-01-21,3,Tharsis,1,1,0,0,0,Morning Star Inc,Venus,45,1,1,,0,47,Landlord ,Tony,Miner ,Ben,Venuphile ,Matt,Hoverlord ,Mayor ,Builder ,98,32.77591973,0
+Tony,6631205982480480825,2021-01-18,3,Elysium,0,0,0,0,0,Inventrix,Base,36,6,3,,7,17,Venuphile ,Ezra,Benefactor ,Ezra,None,UNKNOWN,Hoverlord ,Ecologist ,Specialist ,73,32.01754386,0
+Ben,6631205982480480825,2021-01-18,3,Elysium,0,0,0,0,0,Manutech,Venus,38,4,2,,5,32,Venuphile ,Ezra,Benefactor ,Ezra,None,UNKNOWN,Hoverlord ,Ecologist ,Specialist ,81,35.52631579,1
+Ezra,6631205982480480825,2021-01-18,3,Elysium,0,0,0,0,0,Morning Star Inc,Venus,39,1,2,,2,12,Venuphile ,Ezra,Benefactor ,Ezra,None,UNKNOWN,Hoverlord ,Ecologist ,Specialist ,74,32.45614035,0
+Ben,2000435363789962635,2021-01-14,3,Hellas,0,0,1,0,0,Poseidon,Colonies,35,5,3,4,10,36,Excentric ,Tony,Space Baron ,Tony,Cultivator ,Matt,Energizer ,Tactician ,Diversifier ,102,33.00970874,0
+Matt,2000435363789962635,2021-01-14,3,Hellas,0,0,1,0,0,Mining Guild,Base,42,12,6,2,25,11,Excentric ,Tony,Space Baron ,Tony,Cultivator ,Matt,Energizer ,Tactician ,Diversifier ,95,30.74433657,0
+Tony,2000435363789962635,2021-01-14,3,Hellas,0,0,1,0,0,Arklight, Colonies,40,2,2,2,2,53,Excentric ,Tony,Space Baron ,Tony,Cultivator ,Matt,Energizer ,Tactician ,Diversifier ,112,36.24595469,1
+Matt,8889729428634207686,2020-12-17,3,Tharsis,0,0,0,1,1,Terralabs Research,Turmoil,17,1,2,,4,28,Cultivator ,Tony,Contractor ,Tony,Space Baron ,Matt,Rim Settler ,Tactician ,Diversifier ,55,23.30508475,0
+Ben,8889729428634207686,2020-12-17,3,Tharsis,0,0,0,1,1,Saturn Systems,Base,31,4,7,,16,27,Cultivator ,Tony,Contractor ,Tony,Space Baron ,Matt,Rim Settler ,Tactician ,Diversifier ,102,43.22033898,1
+Tony,8889729428634207686,2020-12-17,3,Tharsis,0,0,0,1,1,Philares,Promotional,34,12,4,,9,17,Cultivator ,Tony,Contractor ,Tony,Space Baron ,Matt,Rim Settler ,Tactician ,Diversifier ,79,33.47457627,0
+Matt,-3407053986685482646,2020-12-07,3,Elysium,1,0,0,0,0,Mining Guild,Base,40,9,4,,16,16,Desert Settler ,Ezra,Industrialist ,Matt,Benefactor ,Matt,Specialist ,Ecologist ,Generalist ,95,36.53846154,1
+Ben,-3407053986685482646,2020-12-07,3,Elysium,1,0,0,0,0,Credicor,Base,36,4,3,,7,31,Desert Settler ,Ezra,Industrialist ,Matt,Benefactor ,Matt,Specialist ,Ecologist ,Generalist ,85,32.69230769,0
+Ezra,-3407053986685482646,2020-12-07,3,Elysium,1,0,0,0,0,Teractor,Base,31,7,7,,18,9,Desert Settler ,Ezra,Industrialist ,Matt,Benefactor ,Matt,Specialist ,Ecologist ,Generalist ,80,30.76923077,0
+Tony,6254468247675205800,2020-11-20,3,Tharsis,0,0,1,0,0,Poseidon,Colonies,32,10,2,3,10,56,Miner ,Ezra,Scientist ,Tony,Banker ,Ezra,Mayor ,Builder ,Gardener ,123,40.19607843,1
+Ben,6254468247675205800,2020-11-20,3,Tharsis,0,0,1,0,0,Interplanetary Cinematics,Base,33,6,6,2,12,40,Miner ,Ezra,Scientist ,Tony,Banker ,Ezra,Mayor ,Builder ,Gardener ,100,32.67973856,0
+Ezra,6254468247675205800,2020-11-20,3,Tharsis,0,0,1,0,0,Polyphemos,Colonies,41,7,5,4,13,10,Miner ,Ezra,Scientist ,Tony,Banker ,Ezra,Mayor ,Builder ,Gardener ,83,27.12418301,0
+Matt,7081724241800295079,2020-11-17,4,Hellas,1,1,0,0,0,Tharsis Republic,Base,37,3,2,,9,2,Contractor ,Matt,Space Baron ,Pat,Venuphile,UNKNOWN,Polar Explorer ,Diversifier ,Energizer ,61,25,0
+Ezra,7081724241800295079,2020-11-17,4,Hellas,1,1,0,0,0,Phobolog,Base,28,6,4,,12,12,Contractor ,Matt,Space Baron ,Pat,Venuphile,UNKNOWN,Polar Explorer ,Diversifier ,Energizer ,58,23.7704918,0
+Pat,7081724241800295079,2020-11-17,4,Hellas,1,1,0,0,0,Saturn Systems,Base,26,1,3,,2,16,Contractor ,Matt,Space Baron ,Pat,Venuphile,UNKNOWN,Polar Explorer ,Diversifier ,Energizer ,60,24.59016393,0
+Tony,7081724241800295079,2020-11-17,4,Hellas,1,1,0,0,0,Thorgate,Base,38,0,2,,0,16,Contractor ,Matt,Space Baron ,Pat,Venuphile,UNKNOWN,Polar Explorer ,Diversifier ,Energizer ,65,26.63934426,1
+Matt,6606195119820597594,2020-10-29,4,Tharsis,0,0,0,1,0,Tharsis Republic,Base,30,7,5,,12,17,Scientist ,Tony,Miner ,Ben,Banker ,Matt,Mayor ,Terraformer ,Builder ,80,27.11864407,0
+Ezra,6606195119820597594,2020-10-29,4,Tharsis,0,0,0,1,0,Phobolog,Base,26,3,2,,5,15,Scientist ,Tony,Miner ,Ben,Banker ,Matt,Mayor ,Terraformer ,Builder ,54,18.30508475,0
+Ben,6606195119820597594,2020-10-29,4,Tharsis,0,0,0,1,0,Saturn Systems,Base,32,5,6,,9,37,Scientist ,Tony,Miner ,Ben,Banker ,Matt,Mayor ,Terraformer ,Builder ,90,30.50847458,1
+Tony,6606195119820597594,2020-10-29,4,Tharsis,0,0,0,1,0,Thorgate,Base,26,2,3,,6,27,Scientist ,Tony,Miner ,Ben,Banker ,Matt,Mayor ,Terraformer ,Builder ,71,24.06779661,0
+Ben,4875793110776598403,2020-09-17,2,Elysium,1,1,0,0,0,Robinson Industries,Prelude,41,16,9,,26,29,Celebrity ,Matt,Venuphile ,Matt,Estate Dealer ,Ben,Generalist ,Specialist ,Ecologist ,132,49.81132075,0
+Matt,4875793110776598403,2020-09-17,2,Elysium,1,1,0,0,0,Vitor,Prelude,54,5,8,,14,50,Celebrity ,Matt,Venuphile ,Matt,Estate Dealer ,Ben,Generalist ,Specialist ,Ecologist ,133,50.18867925,1
+Ben,-1882410581558862462,2020-09-17,3,Tharsis,0,0,1,1,0,Tharsis Republic,Base,25,9,9,1,27,47,Miner ,Matt,Thermalist ,Matt,Banker ,Ben,Mayor ,Builder ,Gardener ,120,40,1
+Matt,-1882410581558862462,2020-09-17,3,Tharsis,0,0,1,1,0,Mining Guild,Base,32,9,4,1,13,7,Miner ,Matt,Thermalist ,Matt,Banker ,Ben,Mayor ,Builder ,Gardener ,71,23.66666667,0
+Tony,-1882410581558862462,2020-09-17,3,Tharsis,0,0,1,1,0,Poseidon,Colonies,23,12,3,6,13,44,Miner ,Matt,Thermalist ,Matt,Banker ,Ben,Mayor ,Builder ,Gardener ,109,36.33333333,0
+Tony,4821223855095518678,2020-09-14,3,Tharsis,1,0,0,0,0,Credicor,Base,40,9,6,,27,22,Scientist ,Ezra,Thermalist ,Tony,Miner ,Ben,Planner ,Builder ,Gardener ,112,34.56790123,0
+Ben,4821223855095518678,2020-09-14,3,Tharsis,1,0,0,0,0,Point Luna,Prelude,44,12,4,,7,52,Scientist ,Ezra,Thermalist ,Tony,Miner ,Ben,Planner ,Builder ,Gardener ,120,37.03703704,1
+Ezra,4821223855095518678,2020-09-14,3,Tharsis,1,0,0,0,0,Inventrix,Base,31,11,4,,14,19,Scientist ,Ezra,Thermalist ,Tony,Miner ,Ben,Planner ,Builder ,Gardener ,92,28.39506173,0
+Ben,8504071803796203623,2020-09-12,3,Hellas,1,0,0,0,0,Cheung Shing Mars,Prelude,39,10,7,,26,27,Venuphile ,Matt,Space Baron ,Tony,Magnate ,Tony,Rim Settler ,Energizer ,Tactician ,119,34.59302326,0
+Matt,8504071803796203623,2020-09-12,3,Hellas,1,0,0,0,0,Morning Star Inc,Venus,44,13,5,,21,9,Venuphile ,Matt,Space Baron ,Tony,Magnate ,Tony,Rim Settler ,Energizer ,Tactician ,92,26.74418605,0
+Tony,8504071803796203623,2020-09-12,3,Hellas,1,0,0,0,0,Valley Trust,Prelude,48,1,6,,4,63,Venuphile ,Matt,Space Baron ,Tony,Magnate ,Tony,Rim Settler ,Energizer ,Tactician ,133,38.6627907,1
+Ben,-6715158575838046146,2020-09-10,4,Tharsis,0,0,0,0,0,Helion,Base,33,5,5,,15,13,Scientist ,Ezra,Thermalist ,Ben,Landlord ,Matt,Mayor ,Planner ,Gardener ,76,25.33333333,0
+Tony,-6715158575838046146,2020-09-10,4,Tharsis,0,0,0,0,0,Saturn Systems,Base,38,2,3,,2,25,Scientist ,Ezra,Thermalist ,Ben,Landlord ,Matt,Mayor ,Planner ,Gardener ,71,23.66666667,0
+Ezra,-6715158575838046146,2020-09-10,4,Tharsis,0,0,0,0,0,Inventrix,Base,32,2,2,,2,32,Scientist ,Ezra,Thermalist ,Ben,Landlord ,Matt,Mayor ,Planner ,Gardener ,78,26,1
+Matt,-6715158575838046146,2020-09-10,4,Tharsis,0,0,0,0,0,Credicor,Base,30,6,5,,13,14,Scientist ,Ezra,Thermalist ,Ben,Landlord ,Matt,Mayor ,Planner ,Gardener ,75,25,0
+Tony,5081431259038046279,2020-09-04,3,Elysium,0,0,0,1,0,Phobolog,Base,30,2,3,,5,20,Estate Dealer ,Ezra,Benefactor ,Ezra,Industrialist ,Ezra,Specialist ,Ecologist ,Legend ,69,34.67336683,0
+Ben,5081431259038046279,2020-09-04,3,Elysium,0,0,0,1,0,Tharsis Republic,Base,19,9,6,,18,14,Estate Dealer ,Ezra,Benefactor ,Ezra,Industrialist ,Ezra,Specialist ,Ecologist ,Legend ,72,36.18090452,1
+Ezra,5081431259038046279,2020-09-04,3,Elysium,0,0,0,1,0,Lakefront Resorts,Turmoil,23,5,2,,5,13,Estate Dealer ,Ezra,Benefactor ,Ezra,Industrialist ,Ezra,Specialist ,Ecologist ,Legend ,58,29.14572864,0
+Ben,1629988315284222888,2020-09-02,3,Hellas,0,0,0,1,0,Septem Tribus,Turmoil,25,10,6,,17,14,Cultivator ,Ben,Excentric ,Ben,Space Baron ,Matt,Energizer ,Diversifier ,Rim Settler ,86,35.83333333,1
+Matt,1629988315284222888,2020-09-02,3,Hellas,0,0,0,1,0,Phobolog,Base,24,4,4,,7,28,Cultivator ,Ben,Excentric ,Ben,Space Baron ,Matt,Energizer ,Diversifier ,Rim Settler ,70,29.16666667,0
+Tony,1629988315284222888,2020-09-02,3,Hellas,0,0,0,1,0,Pristar,Turmoil,22,4,4,,7,40,Cultivator ,Ben,Excentric ,Ben,Space Baron ,Matt,Energizer ,Diversifier ,Rim Settler ,84,35,0
+Ezra,4896993886994600302,2020-09-03,2,Tharsis,0,1,0,0,0,Interplanetary Cinematics,Base,53,7,3,,9,9,Scientist ,Tony,Thermalist ,Ezra,Venuphile ,Tony,Builder ,Mayor ,Terrafromer ,93,49.20634921,0
+Tony,4896993886994600302,2020-09-03,2,Tharsis,0,1,0,0,0,Manutech,Venus,42,6,6,,15,18,Scientist ,Tony,Thermalist ,Ezra,Venuphile ,Tony,Builder ,Mayor ,Terrafromer ,96,50.79365079,1
+Tony,7310778133022499541,2020-08-29,2,Elysium,1,0,0,0,0,Tharsis Republic,Base,43,16,9,,28,24,Benefactor ,Tony,Industrialist ,Ben,Estate Dealer ,Tony,Specialist ,Ecologist ,Tycoon ,131,49.62121212,0
+Ben,7310778133022499541,2020-08-29,2,Elysium,1,0,0,0,0,Cheung Shing Mars,Prelude,42,12,6,,18,46,Benefactor ,Tony,Industrialist ,Ben,Estate Dealer ,Tony,Specialist ,Ecologist ,Tycoon ,133,50.37878788,1
+Matt,8843133749934370372,2020-08-29,2,Elysium,1,1,0,0,0,Valley Trust,Prelude,54,5,6,,11,20,Benefactor ,Matt,Industrialist ,Ben,Estate Dealer ,Ben,Specialist ,Legend ,Hoverlord ,100,52.35602094,1
+Ben,8843133749934370372,2020-08-29,2,Elysium,1,1,0,0,0,Celestic,Venus,38,6,4,,9,18,Benefactor ,Matt,Industrialist ,Ben,Estate Dealer ,Ben,Specialist ,Legend ,Hoverlord ,91,47.64397906,0
+Matt,7106335788342618841,2020-08-27,3,Hellas,1,0,1,0,0,Vitor,Prelude,25,4,3,5,8,89,Magnate ,Matt,Cultivator ,Ben,Excentric ,Matt,Rim Settler ,Diversifier ,Energizer ,136,36.65768194,1
+Ben,7106335788342618841,2020-08-27,3,Hellas,1,0,1,0,0,Aridor,Colonies,41,6,7,1,16,35,Magnate ,Matt,Cultivator ,Ben,Excentric ,Matt,Rim Settler ,Diversifier ,Energizer ,107,28.84097035,0
+Tony,7106335788342618841,2020-08-27,3,Hellas,1,0,1,0,0,Poseidon,Colonies,50,8,5,3,10,43,Magnate ,Matt,Cultivator ,Ben,Excentric ,Matt,Rim Settler ,Diversifier ,Energizer ,128,34.50134771,0
+Ben,-999573891392013667,2020-08-23,3,Hellas,1,0,0,0,0,Point Luna,Prelude,30,9,7,,15,34,Contractor ,Ezra,Excentric ,Matt,Magnate ,Ben,Polar Explorer ,Rim Settler ,Diversifier ,107,34.96732026,0
+Matt,-999573891392013667,2020-08-23,3,Hellas,1,0,0,0,0,Phobolog,Base,44,6,5,,11,47,Contractor ,Ezra,Excentric ,Matt,Magnate ,Ben,Polar Explorer ,Rim Settler ,Diversifier ,113,36.92810458,1
+Ezra,-999573891392013667,2020-08-23,3,Hellas,1,0,0,0,0,Teractor,Base,46,4,3,,7,17,Contractor ,Ezra,Excentric ,Matt,Magnate ,Ben,Polar Explorer ,Rim Settler ,Diversifier ,86,28.10457516,0
+Matt,-4395589048529601118,2020-08-15,4,Tharsis,0,0,0,0,0,Robinson Industries,Prelude,27,3,5,,6,6,Miner ,matt,Thermalist ,annie,Landlord ,katie,Builder ,Terraformwe,Gardener,49,29.6969697,0
+Patsy,-4395589048529601118,2020-08-15,4,Tharsis,0,0,0,0,0,Vitor,Prelude,28,3,0,,3,6,Miner ,matt,Thermalist ,annie,Landlord ,katie,Builder ,Terraformwe,Gardener,52,31.51515152,0
+Katie,-4395589048529601118,2020-08-15,4,Tharsis,0,0,0,0,0,Point Luna,Prelude,35,4,2,,3,7,Miner ,matt,Thermalist ,annie,Landlord ,katie,Builder ,Terraformwe,Gardener,64,38.78787879,1
+Annie,-4395589048529601118,2020-08-15,4,Tharsis,0,0,0,0,0,Beginner,Base,36,1,,,5,6,Miner ,matt,Thermalist ,annie,Landlord ,katie,Builder ,Terraformwe,Gardener,53,,0
+Ben,-8340703084627800340,2020-08-11,3,Hellas,1,0,0,0,0,Robinson Industries,Prelude,33,5,5,,10,21,Magnate ,Matt,Space Baron ,Tony,Eccentric ,Matt,Diversifier ,Rim Settler ,Polar Settler ,73,32.30088496,0
+Matt,-8340703084627800340,2020-08-11,3,Hellas,1,0,0,0,0,Vitor,Prelude,41,6,0,,0,18,Magnate ,Matt,Space Baron ,Tony,Eccentric ,Matt,Diversifier ,Rim Settler ,Polar Settler ,72,31.85840708,0
+Tony,-8340703084627800340,2020-08-11,3,Hellas,1,0,0,0,0,Point Luna,Prelude,34,3,2,,4,15,Magnate ,Matt,Space Baron ,Tony,Eccentric ,Matt,Diversifier ,Rim Settler ,Polar Settler ,81,35.84070796,1
+Tony,-7622988180816258592,2020-08-11,2,Hellas,1,0,0,0,0,Inventrix,Base,46,4,6,,9,26,Contractor ,Tony,Space Baron ,Ben,Eccentric ,Ben,Polar Explorer ,Rim Settler ,Diversifier ,95,44.18604651,0
+Ben,-7622988180816258592,2020-08-11,2,Hellas,1,0,0,0,0,Point Luna,Prelude,40,6,5,,10,44,Contractor ,Tony,Space Baron ,Ben,Eccentric ,Ben,Polar Explorer ,Rim Settler ,Diversifier ,120,55.81395349,1
+Tony,-978131088104927113,2020-08-07,3,Elysium,1,0,0,0,0,Tharsis Republic,Base,32,4,7,,12,13,Desert Settler ,Tony,Benefactor ,Ben,Estate Dealer ,Tony,Legend ,Ecologist ,Generalist ,73,32.44444444,0
+Matt,-978131088104927113,2020-08-07,3,Elysium,1,0,0,0,0,Valley Trust,Prelude,33,6,2,,7,22,Desert Settler ,Tony,Benefactor ,Ben,Estate Dealer ,Tony,Legend ,Ecologist ,Generalist ,77,34.22222222,1
+Ben,-978131088104927113,2020-08-07,3,Elysium,1,0,0,0,0,Interplanetary Cinematics,Base,38,4,2,,4,12,Desert Settler ,Tony,Benefactor ,Ben,Estate Dealer ,Tony,Legend ,Ecologist ,Generalist ,75,33.33333333,0
+Pat,-559622636695782529,2020-08-07,4,Hellas,0,1,1,1,0,Credicor,Base,33,2,4,,4,44,Contractor ,Tony,Venuphile ,Matt,Space Baron ,Pat,Energizer ,Hoverlord ,Diversifier ,95,0.2861445783,0
+Ben,-559622636695782529,2020-08-07,4,Hellas,0,1,1,1,0,Viron,Venus,22,8,7,,18,16,Contractor ,Tony,Venuphile ,Matt,Space Baron ,Pat,Energizer ,Hoverlord ,Diversifier ,64,0.1927710843,0
+Tony,-559622636695782529,2020-08-07,4,Hellas,0,1,1,1,0,Utopia Invest,Turmoil,29,1,3,,2,67,Contractor ,Tony,Venuphile ,Matt,Space Baron ,Pat,Energizer ,Hoverlord ,Diversifier ,116,0.3493975904,1
+Matt,-559622636695782529,2020-08-07,4,Hellas,0,1,1,1,0,Celestic,Venus,22,2,1,,0,23,Contractor ,Tony,Venuphile ,Matt,Space Baron ,Pat,Energizer ,Hoverlord ,Diversifier ,57,0.171686747,0
+Ben,-4330674040787763106,2020-08-07,3,Tharsis,1,0,0,0,0,Vitor,Prelude,33,2,2,,3,24,Thermalist ,Ben,Scientist ,Matt,Landlord ,Pat,Builder ,Planner ,Gardener ,73,0.3258928571,0
+Matt,-4330674040787763106,2020-08-07,3,Tharsis,1,0,0,0,0,Robinson Industries,Prelude,32,2,2,,4,15,Thermalist ,Ben,Scientist ,Matt,Landlord ,Pat,Builder ,Planner ,Gardener ,63,0.28125,0
+Pat,-4330674040787763106,2020-08-07,3,Tharsis,1,0,0,0,0,Cheung Shing Mars,Prelude,40,7,3,,8,18,Thermalist ,Ben,Scientist ,Matt,Landlord ,Pat,Builder ,Planner ,Gardener ,88,0.3928571429,1
+Ezra,242453222055298726,2020-08-06,3,Tharsis,0,0,0,1,0,Saturn Systems,Base,32,3,3,,9,19,Scientist ,Tony,Banker ,Ezra,Thermalist ,Ezra,Builder ,Gardener ,Turmoil Terraformer ,80,0.3053435115,0
+Tony,242453222055298726,2020-08-06,3,Tharsis,0,0,0,1,0,Ecoline,Base,21,10,2,,8,28,Scientist ,Tony,Banker ,Ezra,Thermalist ,Ezra,Builder ,Gardener ,Turmoil Terraformer ,76,0.2900763359,0
+Ben,242453222055298726,2020-08-06,3,Tharsis,0,0,0,1,0,Thorgate,Base,27,12,6,,25,30,Scientist ,Tony,Banker ,Ezra,Thermalist ,Ezra,Builder ,Gardener ,Turmoil Terraformer ,106,0.4045801527,1
+Matt,4586963643742272279,2020-08-04,2,Elysium,0,0,1,0,0,Polyphemos,Colonies,40,9,8,3,21,52,Desert Settler ,Ezra,Benefactor ,Ezra,Estate Dealer ,Ezra,Spcialist ,Ecologist ,Legend ,122,0.488,0
+Ezra,4586963643742272279,2020-08-04,2,Elysium,0,0,1,0,0,Credicor,Base,53,14,5,2,19,12,Desert Settler ,Ezra,Benefactor ,Ezra,Estate Dealer ,Ezra,Spcialist ,Ecologist ,Legend ,128,0.512,1
+Ben,3941314499454020985,2020-08-02,3,Tharsis,1,1,0,0,0,Viron,Venus,28,7,4,,16,44,Scientist ,Pat,Venuphile ,Ben,Banker ,Pat,Mayor ,Builder ,Gardener ,104,0.3768115942,1
+Matt,3941314499454020985,2020-08-02,3,Tharsis,1,1,0,0,0,Robinson Industries,Prelude,50,10,6,,15,8,Scientist ,Pat,Venuphile ,Ben,Banker ,Pat,Mayor ,Builder ,Gardener ,88,0.3188405797,0
+Pat,3941314499454020985,2020-08-02,3,Tharsis,1,1,0,0,0,Inventrix,Base,26,5,7,,16,15,Scientist ,Pat,Venuphile ,Ben,Banker ,Pat,Mayor ,Builder ,Gardener ,84,0.3043478261,0
+Ben,1201693134820393181,2020-07-31,2,Elysium,1,1,0,0,0,Aphrodite,Venus,38,12,9,,25,35,Awards ,funder,Venuphile ,Matt,Desert Settler ,Ben,Benefactor ,Milestones ,Generalist ,130,0.5078125,1
+Matt,1201693134820393181,2020-07-31,2,Elysium,1,1,0,0,0,Morning Star Inc,Venus,61,7,5,,10,38,Awards ,funder,Venuphile ,Matt,Desert Settler ,Ben,Benefactor ,Milestones ,Generalist ,126,0.4921875,0
+Ben,3493527590301073,2020-07-30,2,Tharsis,1,0,0,0,0,Saturn Systems,Base,44,8,6,,18,12,Awards ,funder,Planner ,Ben,Gardener ,Tony,Mayor ,Milestones ,Miner ,97,0.48743718592964824,0
+Tony,3493527590301073,2020-07-30,2,Tharsis,1,0,0,0,0,Valley Trust,Prelude,38,14,6,,23,12,Awards ,funder,Planner ,Ben,Gardener ,Tony,Mayor ,Milestones ,Miner ,102,0.5125628140703518,1
+Matt,-5033704728715776464,2020-07-29,2,Hellas,1,0,0,0,0,Teractor,Base,55,3,3,2,2,120,Awards ,funder,Industrialist ,matt,Benefactor ,pat,Desert settler ,Milestones ,Generalist ,195,0.49744897959183676,0
+Pat,-5033704728715776464,2020-07-29,2,Hellas,1,0,0,0,0,Credicor,Base,54,19,14,5,42,67,Awards ,funder,Industrialist ,matt,Benefactor ,pat,Desert settler ,Milestones ,Generalist ,197,0.5025510204081632,1
+Matt,8900340738435249924,2020-07-27,2,Elysium,0,1,1,0,0,Teractor,Base,55,3,3,2,2,120,Awards ,funder,Industrialist ,matt,Benefactor ,pat,Desert settler ,Milestones ,Generalist ,195,0.49744897959183676,0
+Pat,8900340738435249924,2020-07-27,2,Elysium,0,1,1,0,0,Credicor,Base,54,19,14,5,42,67,Awards ,funder,Industrialist ,matt,Benefactor ,pat,Desert settler ,Milestones ,Generalist ,197,0.5025510204081632,1
+Tony,-6332936966609709629,2020-07-26,3,Tharsis,0,0,0,1,0,Thorgate,Base,30,3,4,,8,48,Miner ,Ezra,Landlord ,Ben,Scientist ,Tony,Milestones ,Builder ,Mayor ,94,0.3533834586466165,0
+Ezra,-6332936966609709629,2020-07-26,3,Tharsis,0,0,0,1,0,Mining Guild,Base,30,5,5,,9,14,Miner ,Ezra,Landlord ,Ben,Scientist ,Tony,Milestones ,Builder ,Mayor ,75,0.2819548872180451,0
+Ben,-6332936966609709629,2020-07-26,3,Tharsis,0,0,0,1,0,Septem Tribus,Turmoil,27,13,8,,19,21,Miner ,Ezra,Landlord ,Ben,Scientist ,Tony,Milestones ,Builder ,Mayor ,97,0.36466165413533835,1
+Tony,-8030622523837630820,2020-07-26,3,Hellas,1,0,0,0,0,Valley Trust,Prelude,43,8,5,,11,16,Eccentric ,Ben,Contractor ,Tony,Cultivator ,Tony,Milestones ,That's,Not,93,0.36470588235294116,1
+Ben,-8030622523837630820,2020-07-26,3,Hellas,1,0,0,0,0,Teractor,Base,37,2,3,,4,29,Eccentric ,Ben,Contractor ,Tony,Cultivator ,Tony,Milestones ,That's,Not,77,0.30196078431372547,0
+Matt,-8030622523837630820,2020-07-26,3,Hellas,1,0,0,0,0,Saturn Systems,Base,38,6,8,,11,26,Eccentric ,Ben,Contractor ,Tony,Cultivator ,Tony,Milestones ,That's,Not,85,0.3333333333333333,0
+Ben,-1842691693924577871,2020-07-25,4,Elysium,0,0,1,0,0,Credicor,Base,44,4,3,,12,33,Industrialist ,Matt,Benefactor ,Ben,Estate Dealer ,Pat,Milestones ,Specialist ,Ecologist ,108,0.288,0
+Matt,-1842691693924577871,2020-07-25,4,Elysium,0,0,1,0,0,Storm Craft Incorporated,Colonies,29,3,5,,13,28,Industrialist ,Matt,Benefactor ,Ben,Estate Dealer ,Pat,Milestones ,Specialist ,Ecologist ,78,0.208,0
+Tony,-1842691693924577871,2020-07-25,4,Elysium,0,0,1,0,0,Poseidon,Colonies,42,4,3,,7,48,Industrialist ,Matt,Benefactor ,Ben,Estate Dealer ,Pat,Milestones ,Specialist ,Ecologist ,110,0.29333333333333333,1
+Pat,-1842691693924577871,2020-07-25,4,Elysium,0,0,1,0,0,Recyclon,Promotional,31,16,4,,15,7,Industrialist ,Matt,Benefactor ,Ben,Estate Dealer ,Pat,Milestones ,Specialist ,Ecologist ,79,0.21066666666666667,0
+Matt,6803094276396758888,2020-07-24,2,Tharsis,0,1,0,0,0,Manutech,Venus,45,8,8,,17,34,Miner ,Matt,Banker ,Ezra,Venuphile ,Matt,Milestones ,Builder ,Terraformer ,124,0.49206349206349204,0
+Ezra,6803094276396758888,2020-07-24,2,Tharsis,0,1,0,0,0,United Nations Mars Initiative,Base,67,11,5,,18,22,Miner ,Matt,Banker ,Ezra,Venuphile ,Matt,Milestones ,Builder ,Terraformer ,128,0.5079365079365079,1
+Ben,-9203255044765267075,2020-07-23,3,Elysium,0,0,0,1,0,Inventrix,Base,20,11,4,,15,20,Benefactor ,Ezra,Estate Dealer ,Ezra,Desert Settler ,Tony,Milestones ,Ecologist ,Specialist ,75,0.3456221198156682,1
+Tony,-9203255044765267075,2020-07-23,3,Elysium,0,0,0,1,0,Thorgate,Base,24,8,4,,16,8,Benefactor ,Ezra,Estate Dealer ,Ezra,Desert Settler ,Tony,Milestones ,Ecologist ,Specialist ,73,0.33640552995391704,0
+Ezra,-9203255044765267075,2020-07-23,3,Elysium,0,0,0,1,0,Teractor,Base,35,6,4,,12,6,Benefactor ,Ezra,Estate Dealer ,Ezra,Desert Settler ,Tony,Milestones ,Ecologist ,Specialist ,69,0.31797235023041476,0
+Matt,4413524890495871235,2020-07-22,3,Hellas,1,1,1,1,1,Mons Insurance,Promotional,24,1,3,3,1,38,Contractor ,Ben,Eccentric ,Tony,Space Baron ,Matt,Milestones ,Polar Explorer ,Diversifier ,76,0.31275720164609055,0
+Ben,4413524890495871235,2020-07-22,3,Hellas,1,1,1,1,1,Tharsis Republic,Base,29,6,7,0,13,35,Contractor ,Ben,Eccentric ,Tony,Space Baron ,Matt,Milestones ,Polar Explorer ,Diversifier ,100,0.411522633744856,1
+Tony,4413524890495871235,2020-07-22,3,Hellas,1,1,1,1,1,Storm Craft Incorporated,Colonies,33,2,3,4,3,22,Contractor ,Ben,Eccentric ,Tony,Space Baron ,Matt,Milestones ,Polar Explorer ,Diversifier ,67,0.2757201646090535,0
+Pat,-889820888335818139,2020-07-20,2,Tharsis,0,0,1,0,0,Valley Trust,Prelude,49,13,7,,22,26,Miner ,pat,Landlord ,pat,Thermalist ,matt,Milestones ,Terraformer,Builder,120,0.4669260700389105,0
+Matt,-889820888335818139,2020-07-20,2,Tharsis,0,0,1,0,0,Phobolog,Base,56,2,4,,9,50,Miner ,pat,Landlord ,pat,Thermalist ,matt,Milestones ,Terraformer,Builder,137,0.5330739299610895,1
+Ben,6947572323009719421,2020-07-20,3,Elysium,1,0,0,0,0,Valley Trust,Prelude,36,6,3,,6,34,Benefactor ,Matt,Industrialist ,Matt,Estate Dealer ,Matt,Milestones ,Generalist ,Ecologist ,96,0.367816091954023,1
+Matt,6947572323009719421,2020-07-20,3,Elysium,1,0,0,0,0,Phobolog,Base,45,4,2,,6,6,Benefactor ,Matt,Industrialist ,Matt,Estate Dealer ,Matt,Milestones ,Generalist ,Ecologist ,81,0.3103448275862069,0
+Ezra,6947572323009719421,2020-07-20,3,Elysium,1,0,0,0,0,Tharsis Republic,Base,36,6,3,,7,28,Benefactor ,Matt,Industrialist ,Matt,Estate Dealer ,Matt,Milestones ,Generalist ,Ecologist ,84,0.3218390804597701,0
+Ben,4601339330512347715,2020-07-19,4,Hellas,0,0,0,1,0,Utopia Invest,Turmoil,20,3,2,,4,9,Eccentric ,Matt,Cultivator ,Pat,Magnate ,Ben,Tactician ,Diversifier ,Polar Explorer ,51,0.24285714285714285,0
+Matt,4601339330512347715,2020-07-19,4,Hellas,0,0,0,1,0,Terralabs Research,Turmoil,18,1,1,,0,21,Eccentric ,Matt,Cultivator ,Pat,Magnate ,Ben,Tactician ,Diversifier ,Polar Explorer ,50,0.23809523809523808,0
+Ezra,4601339330512347715,2020-07-19,4,Hellas,0,0,0,1,0,Saturn Systems,Base,27,4,2,,7,8,Eccentric ,Matt,Cultivator ,Pat,Magnate ,Ben,Tactician ,Diversifier ,Polar Explorer ,52,0.24761904761904763,0
+Pat,4601339330512347715,2020-07-19,4,Hellas,0,0,0,1,0,Credicor,Base,34,5,5,,12,1,Eccentric ,Matt,Cultivator ,Pat,Magnate ,Ben,Tactician ,Diversifier ,Polar Explorer ,57,0.2714285714285714,1
+Ezra,5823456947636809365,2020-07-17,3,Tharsis,0,0,0,0,0,Inventrix,Base,40,12,3,,18,21,Estate Dealer ,Ezra,Industrialist ,Ben,Benefactor ,Ezra,Ecologist ,Specialist ,Generalist ,106,0.3045977011494253,0
+Ben,5823456947636809365,2020-07-17,3,Tharsis,0,0,0,0,0,Poseidon,Colonies,36,8,4,,9,54,Estate Dealer ,Ezra,Industrialist ,Ben,Benefactor ,Ezra,Ecologist ,Specialist ,Generalist ,124,0.3563218390804598,1
+Tony,5823456947636809365,2020-07-17,3,Tharsis,0,0,0,0,0,Arklight, Colonies,36,10,4,,17,41,Estate Dealer ,Ezra,Industrialist ,Ben,Benefactor ,Ezra,Ecologist ,Specialist ,Generalist ,118,0.3390804597701149,0
+Matt,4677148346208776684,2020-07-16,2,Tharsis,1,0,0,1,0,Saturn Systems,Base,47,3,3,,5,49,Scientist ,matt,Miner ,matt,Banker ,tony,Planner ,Mayor ,Gardener ,129,0.6789473684210526,1
+Tony,4677148346208776684,2020-07-16,2,Tharsis,1,0,0,1,0,Helion,Base,27,9,3,,6,14,Scientist ,matt,Miner ,matt,Banker ,tony,Planner ,Mayor ,Gardener ,61,0.32105263157894737,0
+Ezra,3046267976487455948,2020-07-15,3,Tharsis,0,0,0,1,0,Tharsis Republic,Base,28,8,5,,16,9,Thermalist ,Ben,Scientist ,Pat,Landlord ,Ezra,Mayor ,Terraformer ,Gardener ,75,0.35377358490566035,1
+Ben,3046267976487455948,2020-07-15,3,Tharsis,0,0,0,1,0,Phobolog,Base,31,6,4,,15,9,Thermalist ,Ben,Scientist ,Pat,Landlord ,Ezra,Mayor ,Terraformer ,Gardener ,73,0.3443396226415094,0
+Pat,3046267976487455948,2020-07-15,3,Tharsis,0,0,0,1,0,Septem Tribus,Turmoil,28,8,5,,18,-2,Thermalist ,Ben,Scientist ,Pat,Landlord ,Ezra,Mayor ,Terraformer ,Gardener ,64,0.3018867924528302,0
+Ben,6553261658675342524,2020-07-14,2,Elysium,0,1,0,0,0,Thorgate,Base,46,10,10,,23,35,Industrialist ,Tony,Benefactor ,Ben,Estate Dealer ,Tony,Generalist ,Tycoon ,Specialist ,129,0.5201612903225806,1
+Tony,6553261658675342524,2020-07-14,2,Elysium,0,1,0,0,0,Teractor,Base,38,11,7,,19,36,Industrialist ,Tony,Benefactor ,Ben,Estate Dealer ,Tony,Generalist ,Tycoon ,Specialist ,119,0.4798387096774194,0
+Ben,-4968396815483769792,2020-07-13,4,Tharsis,1,0,0,0,0,Robinson Industries,Prelude,31,8,5,,16,2,Scientist ,Ezra,Banker ,Matt,Thermalist ,Pat,Mayor ,Gardener ,Builder ,64,0.25,0
+Matt,-4968396815483769792,2020-07-13,4,Tharsis,1,0,0,0,0,Thorgate,Base,32,3,3,,7,9,Scientist ,Ezra,Banker ,Matt,Thermalist ,Pat,Mayor ,Gardener ,Builder ,61,0.23828125,0
+Ezra,-4968396815483769792,2020-07-13,4,Tharsis,1,0,0,0,0,Vitor,Prelude,27,3,2,,4,23,Scientist ,Ezra,Banker ,Matt,Thermalist ,Pat,Mayor ,Gardener ,Builder ,66,0.2578125,1
+Pat,-4968396815483769792,2020-07-13,4,Tharsis,1,0,0,0,0,Cheung Shing Mars,Prelude,39,3,2,,6,7,Scientist ,Ezra,Banker ,Matt,Thermalist ,Pat,Mayor ,Gardener ,Builder ,65,0.25390625,0
+Matt,5134265630912669040,2020-07-12,4,Hellas,0,0,1,0,0,Poseidon,Colonies,37,0,1,4,1,18,Contractor ,Ezra,Cultivator ,Pat,Space Baron ,Ben,Energizer ,Rim Settler ,Polar explorer ,60,0.23529411764705882,0
+Ezra,5134265630912669040,2020-07-12,4,Hellas,0,0,1,0,0,Interplanetary Cinematics,Base,36,3,0,0,0,16,Contractor ,Ezra,Cultivator ,Pat,Space Baron ,Ben,Energizer ,Rim Settler ,Polar explorer ,67,0.2627450980392157,0
+Ben,5134265630912669040,2020-07-12,4,Hellas,0,0,1,0,0,Phobolog,Base,29,2,3,3,3,24,Contractor ,Ezra,Cultivator ,Pat,Space Baron ,Ben,Energizer ,Rim Settler ,Polar explorer ,68,0.26666666666666666,1
+Pat,5134265630912669040,2020-07-12,4,Hellas,0,0,1,0,0,Tharsis Republic,Base,33,5,7,0,10,2,Contractor ,Ezra,Cultivator ,Pat,Space Baron ,Ben,Energizer ,Rim Settler ,Polar explorer ,60,0.23529411764705882,0
+Matt,2217075035770581364,2020-07-10,3,Hellas,1,0,0,0,0,Utopia Invest,Turmoil,28,0,3,,2,38,Venuphile ,Ben,Scientist ,Tony,Banker ,Ben,Terraformer ,Builder ,Mayor ,75,0.27472527472527475,0
+Tony,2217075035770581364,2020-07-10,3,Hellas,1,0,0,0,0,Thorgate,Base,34,8,6,,12,32,Venuphile ,Ben,Scientist ,Tony,Banker ,Ben,Terraformer ,Builder ,Mayor ,100,0.3663003663003663,1
+Ben,2217075035770581364,2020-07-10,3,Hellas,1,0,0,0,0,Morning Star Inc,Venus,30,4,7,,9,40,Venuphile ,Ben,Scientist ,Tony,Banker ,Ben,Terraformer ,Builder ,Mayor ,98,0.358974358974359,0
+Matt,-1987008132843423838,2020-07-10,2,Hellas,1,0,0,0,0,Cheung Shing Mars,Prelude,48,8,2,,8,12,Cultivator,UNKNOWN,Magnate,UNKNOWN,Contractor,UNKNOWN,Energizer,Tactician,Polar explorer,91,0.5416666666666666,1
+Pat,-1987008132843423838,2020-07-10,2,Hellas,1,0,0,0,0,Tharsis Republic,Base,37,4,7,,12,9,Cultivator,UNKNOWN,Magnate,UNKNOWN,Contractor,UNKNOWN,Energizer,Tactician,Polar explorer,77,0.4583333333333333,0
+Tony,7413422035397818568,2020-07-09,3,Hellas,0,0,0,1,0,Teractor,Base,32,4,3,0,4,35,Space Baron ,Tony,Cultivator ,Ben,Magnate ,Tony,Energizer ,Tactician ,Polar Explorer ,92,0.3865546218487395,1
+Ben,7413422035397818568,2020-07-09,3,Hellas,0,0,0,1,0,Credicor,Base,17,8,4,0,13,29,Space Baron ,Tony,Cultivator ,Ben,Magnate ,Tony,Energizer ,Tactician ,Polar Explorer ,76,0.31932773109243695,0
+Ezra,7413422035397818568,2020-07-09,3,Hellas,0,0,0,1,0,Thorgate,Base,28,3,4,0,7,20,Space Baron ,Tony,Cultivator ,Ben,Magnate ,Tony,Energizer ,Tactician ,Polar Explorer ,70,0.29411764705882354,0
+Pat,-5205996728184042503,2020-07-09,3,Elysium,0,1,0,0,0,Morning Star Inc,Venus,30,3,2,0,3,50,Venuphile ,Pat,Benefactor ,Ezra,Celebrity ,Pat,Hoverlord,Legend ,Ecologist ,96,0.35294117647058826,1
+Ben,-5205996728184042503,2020-07-09,3,Elysium,0,1,0,0,0,Viron,Venus,39,5,5,0,12,19,Venuphile ,Pat,Benefactor ,Ezra,Celebrity ,Pat,Hoverlord,Legend ,Ecologist ,89,0.3272058823529412,0
+Ezra,-5205996728184042503,2020-07-09,3,Elysium,0,1,0,0,0,Celestic,Venus,44,2,1,0,4,20,Venuphile ,Pat,Benefactor ,Ezra,Celebrity ,Pat,Hoverlord,Legend ,Ecologist ,87,0.31985294117647056,0
+Matt,-7803758202852297116,2020-07-08,2,Tharsis,0,0,1,0,0,Credicor,Base,46,8,4,,11,5,Thermalist ,matt,Banker ,pat,Landlord ,matt,Terraformer ,Mayor,Gardener,80,0.45714285714285713,0
+Pat,-7803758202852297116,2020-07-08,2,Tharsis,0,0,1,0,0,Saturn Systems,Base,41,7,4,,11,16,Thermalist ,matt,Banker ,pat,Landlord ,matt,Terraformer ,Mayor,Gardener,95,0.5428571428571428,1
+Ben,6033333215741754247,2020-07-07,2,Hellas,0,0,1,0,0,Aridor,Colonies,43,10,6,,21,27,Cultivator ,Ben,Space Baron ,Tony,Eccentric ,Tony,Diversifier ,Polar Explorer ,Tactitian ,116,0.464,0
+Tony,6033333215741754247,2020-07-07,2,Hellas,0,0,1,0,0,Poseidon,Colonies,60,9,5,,14,36,Cultivator ,Ben,Space Baron ,Tony,Eccentric ,Tony,Diversifier ,Polar Explorer ,Tactitian ,134,0.536,1
+Ben,-7474556201807812275,2020-07-06,4,Tharsis,1,0,0,1,0,Mining Guild,Base,32,4,3,,12,6,Miner ,Ben,Scientist ,Pat,Mayor ,Matt,Builder ,Gardener ,Greeneries,59,0.25877192982456143,0
+Tony,-7474556201807812275,2020-07-06,4,Tharsis,1,0,0,1,0,Valley Trust,Prelude,19,1,3,,7,19,Miner ,Ben,Scientist ,Pat,Mayor ,Matt,Builder ,Gardener ,Greeneries,51,0.2236842105263158,0
+Matt,-7474556201807812275,2020-07-06,4,Tharsis,1,0,0,1,0,Lakefront Resorts,Turmoil,22,5,4,,8,4,Miner ,Ben,Scientist ,Pat,Mayor ,Matt,Builder ,Gardener ,Greeneries,49,0.2149122807017544,0
+Pat,-7474556201807812275,2020-07-06,4,Tharsis,1,0,0,1,0,Cheung Shing Mars,Prelude,30,8,3,,7,12,Miner ,Ben,Scientist ,Pat,Mayor ,Matt,Builder ,Gardener ,Greeneries,69,0.3026315789473684,1
+Ezra,-925130931718140922,2020-07-05,2,Elysium,0,0,0,1,0,Interplanetary Cinematics,Base,33,10,7,,19,16,Estate Dealer ,Pat,Benefactor ,Pat,Desert Settler ,Pat,Generalist ,Legend ,Specialist ,98,0.5,1
+Pat,-925130931718140922,2020-07-05,2,Elysium,0,0,0,1,0,Arcadian Communities,Promotional,34,9,4,,13,27,Estate Dealer ,Pat,Benefactor ,Pat,Desert Settler ,Pat,Generalist ,Legend ,Specialist ,98,0.5,1
+Ben,-3273909214159453514,2020-07-04,3,Elysium,0,0,1,0,0,Philares,Promotional,36,11,5,3,17,24,Industrialist ,Ben,Desert Settler ,Ezra,Estate Dealer ,Matt,Generalist ,Specialist ,Ecologist ,100,0.3546099290780142,1
+Matt,-3273909214159453514,2020-07-04,3,Elysium,0,0,1,0,0,Tharsis Republic,Base,37,5,5,1,18,17,Industrialist ,Ben,Desert Settler ,Ezra,Estate Dealer ,Matt,Generalist ,Specialist ,Ecologist ,87,0.30851063829787234,0
+Ezra,-3273909214159453514,2020-07-04,3,Elysium,0,0,1,0,0,Aridor,Colonies,36,10,6,5,24,8,Industrialist ,Ben,Desert Settler ,Ezra,Estate Dealer ,Matt,Generalist ,Specialist ,Ecologist ,95,0.33687943262411346,0
+Ezra,3271552887154541037,2020-07-08,4,Tharsis,1,0,0,0,0,Mining Guild,Base,29,4,5,,11,21,Thermalist ,Ben,Scientist ,Matt,Landlord ,Tony,Builder ,Mayor ,Planner ,79,0.2386706949,0
+Ben,3271552887154541037,2020-07-08,4,Tharsis,1,0,0,0,0,Manutech,Venus,38,8,4,,12,10,Thermalist ,Ben,Scientist ,Matt,Landlord ,Tony,Builder ,Mayor ,Planner ,72,0.2175226586,0
+Matt,3271552887154541037,2020-07-08,4,Tharsis,1,0,0,0,0,Factorum,Promotional,35,,,,,62,Thermalist ,Ben,Scientist ,Matt,Landlord ,Tony,Builder ,Mayor ,Planner ,112,0.3383685801,1
+Tony,3271552887154541037,2020-07-08,4,Tharsis,1,0,0,0,0,Arcadian Communities,Promotional,37,8,4,,12,6,Thermalist ,Ben,Scientist ,Matt,Landlord ,Tony,Builder ,Mayor ,Planner ,68,0.2054380665,0
+Matt,-6992990136767715538,2020-07-03,2,Tharsis,1,0,0,1,0,Phobolog,Base,33,10,5,,16,31,Contractor ,Matt,Cultivator ,Ben,Space Baron ,Matt,Diversifier ,Polar Explorer ,Tactician ,110,0.4641350211,0
+Ben,-6992990136767715538,2020-07-03,2,Tharsis,1,0,0,1,0,Lakefront Resorts,Turmoil,29,9,9,,20,59,Contractor ,Matt,Cultivator ,Ben,Space Baron ,Matt,Diversifier ,Polar Explorer ,Tactician ,127,0.5358649789,1
+Ezra,483600659422023572,2020-07-03,4,Tharsis,0,1,1,0,0,Mining Guild,Base,29,4,5,,11,21,Thermalist ,Ben,Scientist ,Matt,Landlord ,Tony,Builder ,Mayor ,Planner ,79,0.23867069486404835,0
+Ben,483600659422023572,2020-07-03,4,Tharsis,0,1,1,0,0,Manutech,Venus,38,8,4,,12,10,Thermalist ,Ben,Scientist ,Matt,Landlord ,Tony,Builder ,Mayor ,Planner ,72,0.2175226586102719,0
+Matt,483600659422023572,2020-07-03,4,Tharsis,0,1,1,0,0,Factorum,Promotional,35,,,,,62,Thermalist ,Ben,Scientist ,Matt,Landlord ,Tony,Builder ,Mayor ,Planner ,112,0.338368580060423,1
+Tony,483600659422023572,2020-07-03,4,Tharsis,0,1,1,0,0,Arcadian Communities,Promotional,37,8,4,,12,6,Thermalist ,Ben,Scientist ,Matt,Landlord ,Tony,Builder ,Mayor ,Planner ,68,0.2054380664652568,0
+Ben,-6275864530786296760,2020-06-29,2,Tharsis,0,0,1,0,1,Recyclon,Promotional,35,10,7,2,20,15,Thermalist ,Ezra,Miner ,Ezra,Landlord ,Ezra,Planner ,Builder ,Mayor ,95,0.42792792792792794,0
+Ezra,-6275864530786296760,2020-06-29,2,Tharsis,0,0,1,0,1,Saturn Systems,Base,60,11,6,1,18,23,Thermalist ,Ezra,Miner ,Ezra,Landlord ,Ezra,Planner ,Builder ,Mayor ,127,0.5720720720720721,1
+Ben,2342260669262054127,2020-06-28,2,Elysium,1,0,0,0,1,Factorum,Promotional,46,10,5,,14,34,Dessert Settler ,Ben,Benefactor ,Matt,Estate Dealer ,Matt,Generalist ,Specialist ,Tycoon ,114,0.44357976653696496,0
+Matt,2342260669262054127,2020-06-28,2,Elysium,1,0,0,0,1,Point Luna,Prelude,45,11,10,,14,53,Dessert Settler ,Ben,Benefactor ,Matt,Estate Dealer ,Matt,Generalist ,Specialist ,Tycoon ,143,0.556420233463035,1
+Ben,-3272213011682725361,2020-06-26,3,Tharsis,0,0,1,1,0,Recyclon,Promotional,28,13,5,3,16,25,Scientist ,Ben,Landlord ,Ben,Banker ,Ezra,Mayor ,Builder ,Gardener ,94,0.373015873015873,1
+Matt,-3272213011682725361,2020-06-26,3,Tharsis,0,0,1,1,0,Arcadian Communities,Promotional,24,2,4,,5,38,Scientist ,Ben,Landlord ,Ben,Banker ,Ezra,Mayor ,Builder ,Gardener ,81,0.32142857142857145,0
+Ezra,-3272213011682725361,2020-06-26,3,Tharsis,0,0,1,1,0,Philares,Promotional,33,7,5,1,13,10,Scientist ,Ben,Landlord ,Ben,Banker ,Ezra,Mayor ,Builder ,Gardener ,77,0.3055555555555556,0
+Ezra,-7231477001587003008,2020-06-25,3,Elysium,0,1,0,1,0,Pristar,Turmoil,30,5,3,,5,15,Desert Settler ,Ben,Industrialist ,Ezra,Benefactor ,Tony,Generalist ,Ecologist,Specialist ,72,0.3116883116883117,0
+Tony,-7231477001587003008,2020-06-25,3,Elysium,0,1,0,1,0,Utopia Invest,Turmoil,38,3,3,,7,15,Desert Settler ,Ben,Industrialist ,Ezra,Benefactor ,Tony,Generalist ,Ecologist,Specialist ,73,0.31601731601731603,0
+Ben,-7231477001587003008,2020-06-25,3,Elysium,0,1,0,1,0,Credicor,Base,33,8,6,,20,13,Desert Settler ,Ben,Industrialist ,Ezra,Benefactor ,Tony,Generalist ,Ecologist,Specialist ,86,0.3722943722943723,1
+Matt,1864508920919726758,2020-06-22,4,Hellas,0,0,0,0,0,Teractor,Base,27,3,5,,6,22,Contractor ,Ezra,Space Baron ,Ben,Excentric ,Matt,Energizer ,Rim Settler ,Polar Explorer ,70,0.25,0
+Tony,1864508920919726758,2020-06-22,4,Hellas,0,0,0,0,0,Saturn Systems,Base,32,3,3,,7,24,Contractor ,Ezra,Space Baron ,Ben,Excentric ,Matt,Energizer ,Rim Settler ,Polar Explorer ,70,0.25,0
+Ben,1864508920919726758,2020-06-22,4,Hellas,0,0,0,0,0,Interplanetary Cinematics,Base,31,3,4,,8,13,Contractor ,Ezra,Space Baron ,Ben,Excentric ,Matt,Energizer ,Rim Settler ,Polar Explorer ,65,0.23214285714285715,0
+Ezra,1864508920919726758,2020-06-22,4,Hellas,0,0,0,0,0,Thorgate,Base,45,4,4,,7,4,Contractor ,Ezra,Space Baron ,Ben,Excentric ,Matt,Energizer ,Rim Settler ,Polar Explorer ,75,0.26785714285714285,1
+Ben,7081888307777216195,2020-06-20,4,Hellas,1,1,0,0,0,Saturn Systems,Base,37,2,5,,8,6,Magnate ,Matt,Cultivator ,Tony,Excentric ,Matt,Rim Settler ,Diversifier ,Polar Explorer ,65,0.22033898305084745,0
+Matt,7081888307777216195,2020-06-20,4,Hellas,1,1,0,0,0,Vitor,Prelude,38,2,3,,2,37,Magnate ,Matt,Cultivator ,Tony,Excentric ,Matt,Rim Settler ,Diversifier ,Polar Explorer ,86,0.29152542372881357,1
+Tony,7081888307777216195,2020-06-20,4,Hellas,1,1,0,0,0,Tharsis Republic,Base,27,9,5,,17,13,Magnate ,Matt,Cultivator ,Tony,Excentric ,Matt,Rim Settler ,Diversifier ,Polar Explorer ,76,0.2576271186440678,0
+Ezra,7081888307777216195,2020-06-20,4,Hellas,1,1,0,0,0,Morning Star Inc,Venus,39,6,3,,10,6,Magnate ,Matt,Cultivator ,Tony,Excentric ,Matt,Rim Settler ,Diversifier ,Polar Explorer ,68,0.2305084745762712,0
+Ezra,6715063395847647385,2020-06-19,4,Elysium,0,1,1,0,0,Polyphemos,Colonies,29,2,1,4,4,22,Venophile ,Tony,Industrialist ,Ezra,Estate Dealer ,Ben,Hoverlord ,Specialist ,Ecologist ,63,0.23333333333333334,0
+Tony,6715063395847647385,2020-06-19,4,Elysium,0,1,1,0,0,Morning Star Inc,Venus,31,2,3,3,7,12,Venophile ,Tony,Industrialist ,Ezra,Estate Dealer ,Ben,Hoverlord ,Specialist ,Ecologist ,57,0.2111111111111111,0
+Ben,6715063395847647385,2020-06-19,4,Elysium,0,1,1,0,0,Aridor,Colonies,28,6,5,1,10,17,Venophile ,Tony,Industrialist ,Ezra,Estate Dealer ,Ben,Hoverlord ,Specialist ,Ecologist ,76,0.2814814814814815,1
+Pat,6715063395847647385,2020-06-19,4,Elysium,0,1,1,0,0,Storm Craft Incorporated,Colonies,42,2,1,2,2,18,Venophile ,Tony,Industrialist ,Ezra,Estate Dealer ,Ben,Hoverlord ,Specialist ,Ecologist ,74,0.2740740740740741,0
+Matt,-5491617204178828150,2020-06-19,2,Tharsis,0,1,0,0,0,Viron,Venus,52,6,8,,9,38,Hoverlord matt,UNKNOWN,Rim settler pat,UNKNOWN,Diversifier matt,UNKNOWN,Eccentric matt,Venuphile matt,Cultivator pat,125,0.5165289256198347,1
+Pat,-5491617204178828150,2020-06-19,2,Tharsis,0,1,0,0,0,Aphrodite,Venus,57,9,8,,19,22,Hoverlord matt,UNKNOWN,Rim settler pat,UNKNOWN,Diversifier matt,UNKNOWN,Eccentric matt,Venuphile matt,Cultivator pat,117,0.4834710743801653,0
+Matt,-1977659935903417286,2020-06-18,4,Tharsis,1,0,0,1,0,Septem Tribus,Turmoil,24,1,4,,8,30,Miner ,Ezra,Thermalist ,Ezra,Banker ,Matt,Terraformer ,Builder ,Gardener ,68,0.27419354838709675,0
+Ben,-1977659935903417286,2020-06-18,4,Tharsis,1,0,0,1,0,Robinson Industries,Prelude,23,4,5,,8,15,Miner ,Ezra,Thermalist ,Ezra,Banker ,Matt,Terraformer ,Builder ,Gardener ,57,0.22983870967741934,0
+Ezra,-1977659935903417286,2020-06-18,4,Tharsis,1,0,0,1,0,Utopia Invest,Turmoil,32,3,2,,8,9,Miner ,Ezra,Thermalist ,Ezra,Banker ,Matt,Terraformer ,Builder ,Gardener ,72,0.2903225806451613,1
+Tony,-1977659935903417286,2020-06-18,4,Tharsis,1,0,0,1,0,Phobolog,Base,30,6,2,,7,1,Miner ,Ezra,Thermalist ,Ezra,Banker ,Matt,Terraformer ,Builder ,Gardener ,51,0.2056451612903226,0
+Ezra,-2724802178152232815,2020-06-17,4,Hellas,0,1,0,0,0,Morning Star Inc,Venus,33,3,3,,3,38,Venuphile ,Ezra,Cultivator ,Matt,Excentric ,Ezra,Energizer ,Hoverlord ,Diversifier ,87,0.2443820224719101,0
+Ben,-2724802178152232815,2020-06-17,4,Hellas,0,1,0,0,0,Celestic,Venus,33,7,6,,18,20,Venuphile ,Ezra,Cultivator ,Matt,Excentric ,Ezra,Energizer ,Hoverlord ,Diversifier ,90,0.25280898876404495,0
+Tony,-2724802178152232815,2020-06-17,4,Hellas,0,1,0,0,0,Viron,Venus,28,1,1,,1,50,Venuphile ,Ezra,Cultivator ,Matt,Excentric ,Ezra,Energizer ,Hoverlord ,Diversifier ,87,0.2443820224719101,0
+Matt,-2724802178152232815,2020-06-17,4,Hellas,0,1,0,0,0,Aphrodite,Venus,43,11,5,,21,10,Venuphile ,Ezra,Cultivator ,Matt,Excentric ,Ezra,Energizer ,Hoverlord ,Diversifier ,92,0.25842696629213485,1
+Ezra,6780910271218744222,2020-06-17,3,Elysium,1,0,0,0,0,Robinson Industries,Prelude,41,9,5,,18,15,Benefactor ,Pat,Industrialist ,Ben,Desert Settler ,Pat,Generalist ,Specialist ,Ecologist ,100,0.4,1
+Pat,6780910271218744222,2020-06-17,3,Elysium,1,0,0,0,0,Cheung Shing Mars,Prelude,39,4,6,,9,6,Benefactor ,Pat,Industrialist ,Ben,Desert Settler ,Pat,Generalist ,Specialist ,Ecologist ,73,0.292,0
+Ben,6780910271218744222,2020-06-17,3,Elysium,1,0,0,0,0,Point Luna,Prelude,40,8,4,,11,14,Benefactor ,Pat,Industrialist ,Ben,Desert Settler ,Pat,Generalist ,Specialist ,Ecologist ,77,0.308,0
+Matt,-2959698878347289955,2020-06-15,2,Hellas,1,0,0,1,0,Tharsis Republic,Base,22,11,11,,26,26,Excentric ,Ezra,Cultivator ,Matt,Space Baron ,Matt,Polar Explorer ,Energizer ,Tactician ,100,0.4830917874396135,0
+Ezra,-2959698878347289955,2020-06-15,2,Hellas,1,0,0,1,0,Vitor,Prelude,51,4,2,,7,30,Excentric ,Ezra,Cultivator ,Matt,Space Baron ,Matt,Polar Explorer ,Energizer ,Tactician ,107,0.5169082125603864,1
+Pat,-8455816304249734269,2020-06-14,3,Hellas,0,0,0,1,0,Ecoline,Base,33,10,4,,11,6,Cultivator ,Pat,Space Baron ,Tony,Eccentric ,Pat,Polar Explorer ,Energizer ,Diversifier ,74,0.35071090047393366,1
+Ezra,-8455816304249734269,2020-06-14,3,Hellas,0,0,0,1,0,Terralabs Research,Turmoil,27,6,2,,8,21,Cultivator ,Pat,Space Baron ,Tony,Eccentric ,Pat,Polar Explorer ,Energizer ,Diversifier ,74,0.35071090047393366,1
+Tony,-8455816304249734269,2020-06-14,3,Hellas,0,0,0,1,0,Utopia Invest,Turmoil,23,3,2,,7,20,Cultivator ,Pat,Space Baron ,Tony,Eccentric ,Pat,Polar Explorer ,Energizer ,Diversifier ,63,0.2985781990521327,0
+Tony,2088612505851164052,2020-06-13,3,Elysium,0,0,1,0,0,Polyphemos,Colonies,40,9,4,2,12,17,Industrialist ,Tony,Desert Settler ,Ezra,Estate Dealer ,Ezra,Specialist ,Generalist ,Legend ,92,0.39655172413793105,1
+Ezra,2088612505851164052,2020-06-13,3,Elysium,0,0,1,0,0,Poseidon,Colonies,39,8,4,4,14,7,Industrialist ,Tony,Desert Settler ,Ezra,Estate Dealer ,Ezra,Specialist ,Generalist ,Legend ,85,0.36637931034482757,0
+Ben,2088612505851164052,2020-06-13,3,Elysium,0,0,1,0,0,Storm Craft Incorporated,Colonies,30,3,1,0,1,16,Industrialist ,Tony,Desert Settler ,Ezra,Estate Dealer ,Ezra,Specialist ,Generalist ,Legend ,55,0.23706896551724138,0
+Ben,-1157144946108369661,2020-06-13,5,Hellas,1,0,1,0,0,Arklight, Colonies,29,0,1,4,3,25,Space Baron ,Tony,Contractor ,Pat,Eccentric ,Ben,Energizer ,Diversifier ,Rim Settler ,64,0.2222222222222222,0
+Matt,-1157144946108369661,2020-06-13,5,Hellas,1,0,1,0,0,Point Luna,Prelude,35,3,1,2,4,0,Space Baron ,Tony,Contractor ,Pat,Eccentric ,Ben,Energizer ,Diversifier ,Rim Settler ,42,0.14583333333333334,0
+Pat,-1157144946108369661,2020-06-13,5,Hellas,1,0,1,0,0,Storm Craft Incorporated,Colonies,28,2,2,2,4,15,Space Baron ,Tony,Contractor ,Pat,Eccentric ,Ben,Energizer ,Diversifier ,Rim Settler ,59,0.2048611111111111,0
+Ezra,-1157144946108369661,2020-06-13,5,Hellas,1,0,1,0,0,Aridor,Colonies,29,5,2,2,8,7,Space Baron ,Tony,Contractor ,Pat,Eccentric ,Ben,Energizer ,Diversifier ,Rim Settler ,56,0.19444444444444445,0
+Tony,-1157144946108369661,2020-06-13,5,Hellas,1,0,1,0,0,Poseidon,Colonies,28,4,2,2,9,14,Space Baron ,Tony,Contractor ,Pat,Eccentric ,Ben,Energizer ,Diversifier ,Rim Settler ,67,0.2326388888888889,1
+Pat,-7805834698092523164,2020-06-12,4,Elysium,1,0,0,0,0,Cheung Shing Mars,Prelude,35,3,4,0,9,3,Industrialist ,Ezra,Desert Settler ,Tony,Estate Dealer ,Ezra,Ecologist ,Generalist ,Tycoon ,52,0.2047244094488189,0
+Tony,-7805834698092523164,2020-06-12,4,Elysium,1,0,0,0,0,Ecoline,Base,32,7,3,0,7,7,Industrialist ,Ezra,Desert Settler ,Tony,Estate Dealer ,Ezra,Ecologist ,Generalist ,Tycoon ,63,0.24803149606299213,0
+Ezra,-7805834698092523164,2020-06-12,4,Elysium,1,0,0,0,0,Vitor,Prelude,27,3,3,0,7,9,Industrialist ,Ezra,Desert Settler ,Tony,Estate Dealer ,Ezra,Ecologist ,Generalist ,Tycoon ,61,0.24015748031496062,0
+Ben,-7805834698092523164,2020-06-12,4,Elysium,1,0,0,0,0,Point Luna,Prelude,29,6,0,0,0,34,Industrialist ,Ezra,Desert Settler ,Tony,Estate Dealer ,Ezra,Ecologist ,Generalist ,Tycoon ,78,0.30708661417322836,1
+Tony,-2358237034743553169,2020-06-12,4,Hellas,1,0,0,0,0,Valley Trust,Prelude,41,4,3,0,7,6,Contractor ,Pat,Cultivator ,Pat,N/A,UNKNOWN,Polar Explorer ,Diversifier ,Rim Settler ,60,0.25,0
+Pat,-2358237034743553169,2020-06-12,4,Hellas,1,0,0,0,0,Cheung Shing Mars,Prelude,32,8,5,0,12,2,Contractor ,Pat,Cultivator ,Pat,N/A,UNKNOWN,Polar Explorer ,Diversifier ,Rim Settler ,64,0.26666666666666666,1
+Ezra,-2358237034743553169,2020-06-12,4,Hellas,1,0,0,0,0,Point Luna,Prelude,30,3,3,0,4,15,Contractor ,Pat,Cultivator ,Pat,N/A,UNKNOWN,Polar Explorer ,Diversifier ,Rim Settler ,52,0.21666666666666667,0
+Ben,-2358237034743553169,2020-06-12,4,Hellas,1,0,0,0,0,Robinson Industries,Prelude,30,2,2,0,2,13,Contractor ,Pat,Cultivator ,Pat,N/A,UNKNOWN,Polar Explorer ,Diversifier ,Rim Settler ,64,0.26666666666666666,1
+Tony,4472724449092142911,2020-06-09,4,Tharsis,0,0,0,0,0,Interplanetary Cinematics,Base,33,3,2,0,6,12,Thermalist ,Ben,Scientist ,Tony,Landlord ,Ezra,Gardener ,Mayor ,Builder ,66,0.2716049382716049,1
+Ezra,4472724449092142911,2020-06-09,4,Tharsis,0,0,0,0,0,Credicor,Base,31,3,3,0,4,9,Thermalist ,Ben,Scientist ,Tony,Landlord ,Ezra,Gardener ,Mayor ,Builder ,62,0.2551440329218107,0
+Pat,4472724449092142911,2020-06-09,4,Tharsis,0,0,0,0,0,Inventrix,Base,31,2,4,0,8,8,Thermalist ,Ben,Scientist ,Tony,Landlord ,Ezra,Gardener ,Mayor ,Builder ,53,0.21810699588477367,0
+Ben,4472724449092142911,2020-06-09,4,Tharsis,0,0,0,0,0,Helion,Base,33,3,3,0,8,11,Thermalist ,Ben,Scientist ,Tony,Landlord ,Ezra,Gardener ,Mayor ,Builder ,62,0.2551440329218107,0
+Tony,-8665751261439402891,2020-06-08,2,Tharsis,0,0,0,0,0,Tharsis Republic,Base,36,8,8,0,17,19,Landlord ,Tony,Banker ,Matt,Scientist ,Matt,Mayor ,Planner ,Builder ,85,0.33073929961089493,0
+Matt,-8665751261439402891,2020-06-08,2,Tharsis,0,0,0,0,0,Saturn Systems,Base,59,13,8,0,23,52,Landlord ,Tony,Banker ,Matt,Scientist ,Matt,Mayor ,Planner ,Builder ,172,0.669260700389105,1
+Tony,8523518051427020148,2020-06-07,2,Tharsis,0,0,0,0,0,Helion,Base,47,7,3,0,12,12,Thermalist ,Tony,Miner ,Matt,Scientist ,Matt,Terraformer ,Builder ,Mayor ,83,0.5123456790123457,1
+Matt,8523518051427020148,2020-06-07,2,Tharsis,0,0,0,0,0,Thorgate,Base,43,1,4,0,4,6,Thermalist ,Tony,Miner ,Matt,Scientist ,Matt,Terraformer ,Builder ,Mayor ,79,0.4876543209876543,0
+Ezra,-485248244018483919,2020-06-07,3,Tharsis,1,0,0,0,0,Tharsis Republic,Base,44,6,6,0,14,2,Miner ,Ezra,Banker ,Ezra,Unfunded ,UNKNOWN,Mayor ,Builder ,Gardener ,81,0.413265306122449,1
+Matt,-485248244018483919,2020-06-07,3,Tharsis,1,0,0,0,0,Credicor,Base,31,5,4,0,5,12,Miner ,Ezra,Banker ,Ezra,Unfunded ,UNKNOWN,Mayor ,Builder ,Gardener ,60,0.30612244897959184,0
+Ben,-485248244018483919,2020-06-07,3,Tharsis,1,0,0,0,0,Thorgate,Base,28,0,4,0,0,20,Miner ,Ezra,Banker ,Ezra,Unfunded ,UNKNOWN,Mayor ,Builder ,Gardener ,55,0.28061224489795916,0
+Tony,4805203753368171546,2020-06-05,2,Tharsis,0,0,0,0,0,Mining Guild,Base,34,6,5,0,11,14,Scientist ,Ezra,Thermalist ,Ezra,Miner ,Ezra,Mayor ,Builder ,Terraformer ,80,0.43956043956043955,0
+Ezra,4805203753368171546,2020-06-05,2,Tharsis,0,0,0,0,0,Saturn Systems,Base,49,6,5,0,11,21,Scientist ,Ezra,Thermalist ,Ezra,Miner ,Ezra,Mayor ,Builder ,Terraformer ,102,0.5604395604395604,1
+Tony,4473102123717391694,2020-06-04,4,Tharsis,0,0,0,0,0,Thorgate,Base,33,5,4,0,9,11,Miner ,Ben,Banker ,Matt,Thermalist ,Ezra,Mayor ,Gardener ,Builder ,67,0.25,0
+Ben,4473102123717391694,2020-06-04,4,Tharsis,0,0,0,0,0,Mining Guild,Base,26,1,4,0,7,32,Miner ,Ben,Banker ,Matt,Thermalist ,Ezra,Mayor ,Gardener ,Builder ,73,0.27238805970149255,1
+Ezra,4473102123717391694,2020-06-04,4,Tharsis,0,0,0,0,0,Helion,Base,34,1,4,0,4,11,Miner ,Ben,Banker ,Matt,Thermalist ,Ezra,Mayor ,Gardener ,Builder ,60,0.22388059701492538,0
+Matt,4473102123717391694,2020-06-04,4,Tharsis,0,0,0,0,0,Credicor,Base,33,7,5,0,12,6,Miner ,Ben,Banker ,Matt,Thermalist ,Ezra,Mayor ,Gardener ,Builder ,68,0.2537313432835821,0
+Pat,3632916133217140980,2020-06-02,3,Tharsis,0,0,0,0,0,Teractor,Base,31,8,5,0,12,10,Thermalist ,Tony,Scientist ,Tony,Banker ,Matt,Mayor ,Builder ,Gardener ,70,0.2845528455284553,0
+Tony,3632916133217140980,2020-06-02,3,Tharsis,0,0,0,0,0,Saturn Systems,Base,44,4,2,0,7,22,Thermalist ,Tony,Scientist ,Tony,Banker ,Matt,Mayor ,Builder ,Gardener ,94,0.3821138211382114,1
+Matt,3632916133217140980,2020-06-02,3,Tharsis,0,0,0,0,0,United Nations Mars Initiative,Base,39,9,4,0,12,12,Thermalist ,Tony,Scientist ,Tony,Banker ,Matt,Mayor ,Builder ,Gardener ,82,0.3333333333333333,0
+Ezra,3613669955295261330,2020-05-31,4,Tharsis,0,0,0,0,0,Thorgate,Base,34,6,2,0,7,24,Scientist ,Ben,Thermalist ,Ezra,Landlord ,Tony,Planner ,Mayor ,Builder ,83,0.2455621301775148,0
+Ben,3613669955295261330,2020-05-31,4,Tharsis,0,0,0,0,0,Inventrix,Base,28,7,4,0,13,30,Scientist ,Ben,Thermalist ,Ezra,Landlord ,Tony,Planner ,Mayor ,Builder ,90,0.26627218934911245,1
+Tony,3613669955295261330,2020-05-31,4,Tharsis,0,0,0,0,0,Tharsis Republic,Base,34,7,5,0,18,13,Scientist ,Ben,Thermalist ,Ezra,Landlord ,Tony,Planner ,Mayor ,Builder ,79,0.23372781065088757,0
+Pat,3613669955295261330,2020-05-31,4,Tharsis,0,0,0,0,0,Credicor,Base,40,9,7,0,18,14,Scientist ,Ben,Thermalist ,Ezra,Landlord ,Tony,Planner ,Mayor ,Builder ,86,0.25443786982248523,0
+Ezra,3003860467802453029,2020-05-30,3,Tharsis,0,0,0,0,0,Tharsis Republic,Base,39,7,7,0,21,24,Miner ,Tony,Thermalist ,Tony,Scientist ,Tony,Mayor ,Builder ,Gardener ,100,0.35842293906810035,1
+Tony,3003860467802453029,2020-05-30,3,Tharsis,0,0,0,0,0,Mining Guild,Base,33,5,3,0,12,23,Miner ,Tony,Thermalist ,Tony,Scientist ,Tony,Mayor ,Builder ,Gardener ,93,0.3333333333333333,0
+Matt,3003860467802453029,2020-05-30,3,Tharsis,0,0,0,0,0,Ecoline,Base,36,15,5,0,17,11,Miner ,Tony,Thermalist ,Tony,Scientist ,Tony,Mayor ,Builder ,Gardener ,86,0.30824372759856633,0
+Ezra,2526254819966743237,2020-05-29,4,Tharsis,0,0,0,0,0,Tharsis Republic,Base,34,9,5,0,11,6,Thermalist ,Ben,Landlord ,Ezra,Banker ,Ezra,Mayor ,Builder ,Gardener ,80,0.29304029304029305,1
+Pat,2526254819966743237,2020-05-29,4,Tharsis,0,0,0,0,0,Phobolog,Base,36,1,3,0,3,29,Thermalist ,Ben,Landlord ,Ezra,Banker ,Ezra,Mayor ,Builder ,Gardener ,71,0.2600732600732601,0
+Ben,2526254819966743237,2020-05-29,4,Tharsis,0,0,0,0,0,Helion,Base,33,7,3,0,9,16,Thermalist ,Ben,Landlord ,Ezra,Banker ,Ezra,Mayor ,Builder ,Gardener ,72,0.26373626373626374,0
+Tony,2526254819966743237,2020-05-29,4,Tharsis,0,0,0,0,0,Mining Guild,Base,26,1,4,0,7,9,Thermalist ,Ben,Landlord ,Ezra,Banker ,Ezra,Mayor ,Builder ,Gardener ,50,0.18315018315018314,0
+Matt,4288220396224497971,2020-05-25,3,Tharsis,0,0,0,0,0,Interplanetary Cinematics,Base,31,5,6,0,12,24,Scientist ,Matt,Thermalist ,Tony,Banker ,Tony,Mayor ,Builder ,Terraformer ,84,0.3333333333333333,0
+Tony,4288220396224497971,2020-05-25,3,Tharsis,0,0,0,0,0,Helion,Base,32,8,5,0,12,10,Scientist ,Matt,Thermalist ,Tony,Banker ,Tony,Mayor ,Builder ,Terraformer ,79,0.3134920634920635,0
+Ezra,4288220396224497971,2020-05-25,3,Tharsis,0,0,0,0,0,Thorgate,Base,58,5,4,0,9,10,Scientist ,Matt,Thermalist ,Tony,Banker ,Tony,Mayor ,Builder ,Terraformer ,89,0.3531746031746032,1
+Ben,-3475149159973667499,2020-05-24,2,Tharsis,0,0,0,0,0,Tharsis Republic,Base,38,6,9,0,19,23,Miner ,Ben,Thermalist ,Ben,Landlord ,Pat,Builder ,Mayor ,Terraformer ,116,0.5742574257425742,1
+Pat,-3475149159973667499,2020-05-24,2,Tharsis,0,0,0,0,0,Ecoline,Base,42,12,7,0,18,14,Miner ,Ben,Thermalist ,Ben,Landlord ,Pat,Builder ,Mayor ,Terraformer ,86,0.42574257425742573,0
+Ben,-8775198752961966444,2020-05-23,2,Tharsis,0,0,0,0,0,Tharsis Republic,Base,46,10,8,0,23,20,Thermalist ,Ezra,Miner ,Ben,Banker ,Ezra,Mayor ,Terraformer ,Gardener ,114,0.5066666666666667,1
+Ezra,-8775198752961966444,2020-05-23,2,Tharsis,0,0,0,0,0,United Nations Mars Initiative,Base,61,11,6,0,18,6,Thermalist ,Ezra,Miner ,Ben,Banker ,Ezra,Mayor ,Terraformer ,Gardener ,111,0.49333333333333335,0
+Pat,1141250033079818563,2020-05-22,4,Tharsis,0,0,0,0,0,Inventrix,Base,38,7,5,0,12,5,Miner ,Ezra,Scientist ,Matt,Thermalist ,Matt,Mayor ,Builder ,Gardener ,69,0.26136363636363635,1
+Ben,1141250033079818563,2020-05-22,4,Tharsis,0,0,0,0,0,Teractor,Base,29,7,6,0,18,7,Miner ,Ezra,Scientist ,Matt,Thermalist ,Matt,Mayor ,Builder ,Gardener ,66,0.25,0
+Ezra,1141250033079818563,2020-05-22,4,Tharsis,0,0,0,0,0,Mining Guild,Base,33,3,3,0,4,9,Miner ,Ezra,Scientist ,Matt,Thermalist ,Matt,Mayor ,Builder ,Gardener ,66,0.25,0
+Matt,1141250033079818563,2020-05-22,4,Tharsis,0,0,0,0,0,Interplanetary Cinematics,Base,25,2,2,0,3,26,Miner ,Ezra,Scientist ,Matt,Thermalist ,Matt,Mayor ,Builder ,Gardener ,63,0.23863636363636365,0
+Ben,212344154726867905,2020-05-20,4,Tharsis,0,0,0,0,0,Interplanetary Cinematics,Base,34,3,1,0,1,26,Miner ,Pat,Thermalist ,Ben,Scientist ,Ezra,Mayor ,Builder ,Gardener ,76,0.25165562913907286,0
+Ezra,212344154726867905,2020-05-20,4,Tharsis,0,0,0,0,0,Teractor,Base,25,5,6,0,15,12,Miner ,Pat,Thermalist ,Ben,Scientist ,Ezra,Mayor ,Builder ,Gardener ,67,0.22185430463576158,0
+Pat,212344154726867905,2020-05-20,4,Tharsis,0,0,0,0,0,Tharsis Republic,Base,32,7,7,0,15,14,Miner ,Pat,Thermalist ,Ben,Scientist ,Ezra,Mayor ,Builder ,Gardener ,80,0.26490066225165565,1
+Tony,212344154726867905,2020-05-20,4,Tharsis,0,0,0,0,0,Credicor,Base,35,7,4,0,13,22,Miner ,Pat,Thermalist ,Ben,Scientist ,Ezra,Mayor ,Builder ,Gardener ,79,0.26158940397350994,0
+Tony,8474805990764765842,2020-05-19,3,Tharsis,0,0,0,0,0,Credicor,Base,44,11,5,0,16,3,Miner ,Ezra,Thermalist ,Tony,Banker ,Ben,Gardener ,Mayor ,Builder ,81,0.32926829268292684,0
+Ben,8474805990764765842,2020-05-19,3,Tharsis,0,0,0,0,0,Tharsis Republic,Base,28,8,7,0,16,23,Miner ,Ezra,Thermalist ,Tony,Banker ,Ben,Gardener ,Mayor ,Builder ,85,0.34552845528455284,1
+Ezra,8474805990764765842,2020-05-19,3,Tharsis,0,0,0,0,0,Mining Guild,Base,30,5,2,0,7,19,Miner ,Ezra,Thermalist ,Tony,Banker ,Ben,Gardener ,Mayor ,Builder ,80,0.3252032520325203,0
+Tony,-6306779657412961641,2020-05-17,3,Tharsis,0,0,0,0,0,Mining Guild,Base,34,6,4,0,10,7,Miner ,Tony,Landlord ,Tony,Banker ,Matt,Mayor ,Builder ,Terraformer ,69,0.3317307692307692,0
+Matt,-6306779657412961641,2020-05-17,3,Tharsis,0,0,0,0,0,Credicor,Base,42,3,3,0,9,8,Miner ,Tony,Landlord ,Tony,Banker ,Matt,Mayor ,Builder ,Terraformer ,72,0.34615384615384615,1
+Ben,-6306779657412961641,2020-05-17,3,Tharsis,0,0,0,0,0,Ecoline,Base,27,6,5,0,12,5,Miner ,Tony,Landlord ,Tony,Banker ,Matt,Mayor ,Builder ,Terraformer ,67,0.32211538461538464,0
+Ezra,-9154017810486417709,2020-05-16,3,Tharsis,0,0,0,0,0,Inventrix,Base,40,10,6,0,14,11,Scientist ,Ezra,Miner ,Ben,Banker ,Ben,Mayor ,Builder ,Gardener ,86,0.31970260223048325,0
+Tony,-9154017810486417709,2020-05-16,3,Tharsis,0,0,0,0,0,Thorgate,Base,29,9,5,0,19,26,Scientist ,Ezra,Miner ,Ben,Banker ,Ben,Mayor ,Builder ,Gardener ,93,0.34572490706319703,1
+Ben,-9154017810486417709,2020-05-16,3,Tharsis,0,0,0,0,0,Interplanetary Cinematics,Base,38,7,6,0,18,12,Scientist ,Ezra,Miner ,Ben,Banker ,Ben,Mayor ,Builder ,Gardener ,90,0.3345724907063197,0
+Ezra,-8793984558312963056,2020-05-15,3,Tharsis,0,0,0,0,0,Tharsis Republic,Base,33,9,7,0,21,31,Scientist ,Ezra,Banker ,Ezra,Thermalist ,Ben,Mayor ,Gardener ,Planner ,104,0.4,1
+Tony,-8793984558312963056,2020-05-15,3,Tharsis,0,0,0,0,0,Ecoline,Base,43,13,6,0,20,4,Scientist ,Ezra,Banker ,Ezra,Thermalist ,Ben,Mayor ,Gardener ,Planner ,89,0.3423076923076923,0
+Ben,-8793984558312963056,2020-05-15,3,Tharsis,0,0,0,0,0,Credicor,Base,28,4,4,0,10,8,Scientist ,Ezra,Banker ,Ezra,Thermalist ,Ben,Mayor ,Gardener ,Planner ,67,0.25769230769230766,0
+Ezra,-534522999607630801,2020-05-14,3,Tharsis,0,0,0,0,0,Thorgate,Base,36,9,6,0,15,23,Scientist ,Ben,Landlord ,Pat,Thermalist ,Ben,Mayor ,Builder ,Gardener ,92,0.3511450381679389,1
+Ben,-534522999607630801,2020-05-14,3,Tharsis,0,0,0,0,0,Mining Guild,Base,33,2,5,0,7,24,Scientist ,Ben,Landlord ,Pat,Thermalist ,Ben,Mayor ,Builder ,Gardener ,81,0.30916030534351147,0
+Pat,-534522999607630801,2020-05-14,3,Tharsis,0,0,0,0,0,Tharsis Republic,Base,34,9,8,0,15,19,Scientist ,Ben,Landlord ,Pat,Thermalist ,Ben,Mayor ,Builder ,Gardener ,89,0.33969465648854963,0
+Pat,7374634341558706179,2020-05-12,2,Tharsis,0,0,0,0,0,Credicor,Base,41,10,9,0,21,21,Banker ,Ezra,Landlord ,Pat,Thermalist ,Ezra,Mayor ,Gardener ,Terraformer ,103,0.4577777777777778,0
+Ezra,7374634341558706179,2020-05-12,2,Tharsis,0,0,0,0,0,Saturn Systems,Base,41,13,7,0,25,23,Banker ,Ezra,Landlord ,Pat,Thermalist ,Ezra,Mayor ,Gardener ,Terraformer ,122,0.5422222222222223,1
+Matt,2558532124571116489,2020-05-10,4,Tharsis,1,0,0,0,0,Teractor,Base,33,3,1,0,4,30,Miner ,Pat,Scientist ,Matt,Thermalist ,Matt,Builder ,Mayor ,Planner ,85,0.2823920265780731,1
+Ezra,2558532124571116489,2020-05-10,4,Tharsis,1,0,0,0,0,Tharsis Republic,Base,33,7,6,0,13,24,Miner ,Pat,Scientist ,Matt,Thermalist ,Matt,Builder ,Mayor ,Planner ,84,0.27906976744186046,0
+Ben,2558532124571116489,2020-05-10,4,Tharsis,1,0,0,0,0,Inventrix,Base,27,5,5,0,10,16,Miner ,Pat,Scientist ,Matt,Thermalist ,Matt,Builder ,Mayor ,Planner ,60,0.19933554817275748,0
+Pat,2558532124571116489,2020-05-10,4,Tharsis,1,0,0,0,0,Mining Guild,Base,42,5,5,0,6,7,Miner ,Pat,Scientist ,Matt,Thermalist ,Matt,Builder ,Mayor ,Planner ,72,0.23920265780730898,0
+Ben,8404742767471011837,2020-05-10,4,Tharsis,1,0,0,0,0,Thorgate,Base,30,6,5,0,9,30,Scientist ,Ezra,Thermalist ,Ezra,Banker ,Matt,Mayor ,Builder ,Gardener ,82,0.25,0
+Tony,8404742767471011837,2020-05-10,4,Tharsis,1,0,0,0,0,Interplanetary Cinematics,Base,34,8,2,0,9,18,Scientist ,Ezra,Thermalist ,Ezra,Banker ,Matt,Mayor ,Builder ,Gardener ,79,0.24085365853658536,0
+Matt,8404742767471011837,2020-05-10,4,Tharsis,1,0,0,0,0,Tharsis Republic,Base,32,11,8,0,28,16,Scientist ,Ezra,Thermalist ,Ezra,Banker ,Matt,Mayor ,Builder ,Gardener ,97,0.29573170731707316,1
+Ezra,8404742767471011837,2020-05-10,4,Tharsis,1,0,0,0,0,Helion,Base,34,2,3,0,8,14,Scientist ,Ezra,Thermalist ,Ezra,Banker ,Matt,Mayor ,Builder ,Gardener ,70,0.21341463414634146,0
+Ben,-7901616889978456029,2020-05-09,4,Tharsis,1,0,0,0,0,Interplanetary Cinematics,Base,26,0,5,0,6,12,Miner ,Ben,Scientist ,Ezra,Banker ,Ben,Mayor ,Gardener ,Builder ,66,0.2462686567164179,0
+Ezra,-7901616889978456029,2020-05-09,4,Tharsis,1,0,0,0,0,Teractor,Base,31,1,1,0,2,26,Miner ,Ben,Scientist ,Ezra,Banker ,Ben,Mayor ,Gardener ,Builder ,65,0.24253731343283583,0
+Pat,-7901616889978456029,2020-05-09,4,Tharsis,1,0,0,0,0,Inventrix,Base,42,11,2,0,5,7,Miner ,Ben,Scientist ,Ezra,Banker ,Ben,Mayor ,Gardener ,Builder ,72,0.26865671641791045,1
+Matt,-7901616889978456029,2020-05-09,4,Tharsis,1,0,0,0,0,Ecoline,Base,26,8,6,0,18,11,Miner ,Ben,Scientist ,Ezra,Banker ,Ben,Mayor ,Gardener ,Builder ,65,0.24253731343283583,0
+Tony,-3173323755516995698,2020-05-08,5,Tharsis,0,0,0,0,0,Interplanetary Cinematics,Base,27,1,3,0,4,21,Scientist ,Pat,Miner ,Tony,Thermalist ,Ezra,Builder ,Planner ,Mayor ,67,0.2120253164556962,1
+Ezra,-3173323755516995698,2020-05-08,5,Tharsis,0,0,0,0,0,Mining Guild,Base,29,6,3,0,6,9,Scientist ,Pat,Miner ,Tony,Thermalist ,Ezra,Builder ,Planner ,Mayor ,65,0.20569620253164558,0
+Matt,-3173323755516995698,2020-05-08,5,Tharsis,0,0,0,0,0,Teractor,Base,35,0,3,0,0,18,Scientist ,Pat,Miner ,Tony,Thermalist ,Ezra,Builder ,Planner ,Mayor ,58,0.18354430379746836,0
+Ben,-3173323755516995698,2020-05-08,5,Tharsis,0,0,0,0,0,Thorgate,Base,30,5,3,0,5,27,Scientist ,Pat,Miner ,Tony,Thermalist ,Ezra,Builder ,Planner ,Mayor ,67,0.2120253164556962,1
+Pat,-3173323755516995698,2020-05-08,5,Tharsis,0,0,0,0,0,Inventrix,Base,32,3,1,0,2,17,Scientist ,Pat,Miner ,Tony,Thermalist ,Ezra,Builder ,Planner ,Mayor ,59,0.18670886075949367,0
+Tony,-1800525307132714690,2020-05-07,4,Tharsis,0,0,0,0,0,Credicor,Base,34,3,2,0,6,44,Miner ,Ezra,Scientist ,Ezra,Banker ,Ben,Mayor ,Builder ,Gardener ,94,0.27485380116959063,1
+Ben,-1800525307132714690,2020-05-07,4,Tharsis,0,0,0,0,0,Teractor,Base,25,4,4,0,12,44,Miner ,Ezra,Scientist ,Ezra,Banker ,Ben,Mayor ,Builder ,Gardener ,90,0.2631578947368421,0
+Ezra,-1800525307132714690,2020-05-07,4,Tharsis,0,0,0,0,0,Mining Guild,Base,42,8,2,0,6,4,Miner ,Ezra,Scientist ,Ezra,Banker ,Ben,Mayor ,Builder ,Gardener ,72,0.21052631578947367,0
+Matt,-1800525307132714690,2020-05-07,4,Tharsis,0,0,0,0,0,Tharsis Republic,Base,36,12,7,0,21,5,Miner ,Ezra,Scientist ,Ezra,Banker ,Ben,Mayor ,Builder ,Gardener ,86,0.25146198830409355,0
+Ezra,3362767104783427171,2020-05-05,3,Tharsis,0,0,0,0,0,Tharsis Republic,Base,32,6,7,0,14,21,Miner ,Pat,Scientist ,Pat,Banker ,Ezra,Planner ,Mayor ,Builder ,100,0.35714285714285715,1
+Ben,3362767104783427171,2020-05-05,3,Tharsis,0,0,0,0,0,Inventrix,Base,35,10,5,0,19,24,Miner ,Pat,Scientist ,Pat,Banker ,Ezra,Planner ,Mayor ,Builder ,97,0.3464285714285714,0
+Pat,3362767104783427171,2020-05-05,3,Tharsis,0,0,0,0,0,Saturn Systems,Base,37,6,6,0,14,26,Miner ,Pat,Scientist ,Pat,Banker ,Ezra,Planner ,Mayor ,Builder ,83,0.29642857142857143,0
+Matt,1612659345142909471,2020-05-03,4,Tharsis,0,0,0,0,0,Mining Guild,Base,28,2,4,0,6,14,Scientist ,Ben,Banker ,Matt,Miner ,Matt,Mayor ,Gardener ,Terraforming ,55,0.2301255230125523,0
+Ezra,1612659345142909471,2020-05-03,4,Tharsis,0,0,0,0,0,Saturn Systems,Base,26,6,4,0,10,16,Scientist ,Ben,Banker ,Matt,Miner ,Matt,Mayor ,Gardener ,Terraforming ,62,0.2594142259414226,0
+Ben,1612659345142909471,2020-05-03,4,Tharsis,0,0,0,0,0,Teractor,Base,30,1,4,0,3,10,Scientist ,Ben,Banker ,Matt,Miner ,Matt,Mayor ,Gardener ,Terraforming ,59,0.24686192468619247,0
+Pat,1612659345142909471,2020-05-03,4,Tharsis,0,0,0,0,0,Thorgate,Base,43,5,2,0,6,-3,Scientist ,Ben,Banker ,Matt,Miner ,Matt,Mayor ,Gardener ,Terraforming ,63,0.26359832635983266,1
+Ezra,4665530185725896448,2020-05-05,3,Tharsis,0,0,0,0,0,United Nations Mars Initiative,Base,55,2,3,0,10,9,Banker ,Tony,Thermalist ,Ezra,Landlord ,Tony,Builder ,Mayor ,Terraformer ,86,0.3359375,0
+Ben,4665530185725896448,2020-05-05,3,Tharsis,0,0,0,0,0,Inventrix,Base,29,12,3,0,12,23,Banker ,Tony,Thermalist ,Ezra,Landlord ,Tony,Builder ,Mayor ,Terraformer ,83,0.32421875,0
+Tony,4665530185725896448,2020-05-05,3,Tharsis,0,0,0,0,0,Saturn Systems,Base,36,10,7,0,15,7,Banker ,Tony,Thermalist ,Ezra,Landlord ,Tony,Builder ,Mayor ,Terraformer ,87,0.33984375,1
+Pat,3998960425303820792,2020-05-03,4,Tharsis,0,0,0,0,0,Mining Guild,Base,23,0,4,0,6,28,Miner ,Pat,Banker ,Matt,Scientist ,Pat,Builder ,Terraformer ,Planner ,74,0.25084745762711863,0
+Matt,3998960425303820792,2020-05-03,4,Tharsis,0,0,0,0,0,Tharsis Republic,Base,21,5,7,0,21,19,Miner ,Pat,Banker ,Matt,Scientist ,Pat,Builder ,Terraformer ,Planner ,81,0.2745762711864407,1
+Ezra,3998960425303820792,2020-05-03,4,Tharsis,0,0,0,0,0,Phobolog,Base,47,9,4,0,10,9,Miner ,Pat,Banker ,Matt,Scientist ,Pat,Builder ,Terraformer ,Planner ,80,0.2711864406779661,0
+Ben,3998960425303820792,2020-05-03,4,Tharsis,0,0,0,0,0,Thorgate,Base,35,9,2,0,7,7,Miner ,Pat,Banker ,Matt,Scientist ,Pat,Builder ,Terraformer ,Planner ,60,0.2033898305084746,0
+Ezra,853212507006667347,2020-05-01,4,Tharsis,0,0,0,0,0,Thorgate,Base,39,6,4,0,15,4,Thermalist ,Matt,Scientist ,Ben,Banker ,Tony,Mayor ,Gardener ,Planner ,68,0.24028268551236748,0
+Tony,853212507006667347,2020-05-01,4,Tharsis,0,0,0,0,0,Tharsis Republic,Base,28,5,6,0,13,10,Thermalist ,Matt,Scientist ,Ben,Banker ,Tony,Mayor ,Gardener ,Planner ,66,0.2332155477031802,0
+Matt,853212507006667347,2020-05-01,4,Tharsis,0,0,0,0,0,Phobolog,Base,31,0,1,0,3,39,Thermalist ,Matt,Scientist ,Ben,Banker ,Tony,Mayor ,Gardener ,Planner ,80,0.2826855123674912,1
+Ben,853212507006667347,2020-05-01,4,Tharsis,0,0,0,0,0,Ecoline,Base,24,8,3,0,11,11,Thermalist ,Matt,Scientist ,Ben,Banker ,Tony,Mayor ,Gardener ,Planner ,69,0.24381625441696114,0
