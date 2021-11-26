@@ -139,7 +139,8 @@ def format_data(sheet, spreadsheet):
         df['total_percent_of_points'] = df['%']
     except:
         df['total_percent_of_points'] = df['Total'] / sum(df['Total'])
-    
+    df['place'] = df['total_points'].rank(ascending=False)
+
     try:
         df['num_colonies'] = df['Colonies (reference)']
     except:
@@ -174,6 +175,7 @@ def format_data(sheet, spreadsheet):
                  'num_greeneries','num_cities','num_colonies','num_greenery_adjancies','card_points',
                  'award_1_name','award_1_funder','award_2_name','award_2_funder','award_3_name','award_3_funder',
                  'milestone_1_name','milestone_2_name','milestone_3_name',
+                 'award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points',
                  'total_points','total_percent_of_points','is_winner']
 
     df = df[keep_cols]
