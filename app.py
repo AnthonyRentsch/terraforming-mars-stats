@@ -9,6 +9,8 @@ import requests
 import plotly.graph_objects as go
 import pandas as pd
 
+from tm_stats.elo import compute_historical_player_ratings, compute_historical_corp_ratings
+
 # data
 df = pd.read_csv('https://raw.githubusercontent.com/AnthonyRentsch/terraforming-mars-stats/main/terraforming-mars-stats.csv')
 
@@ -44,6 +46,13 @@ def render_content(tab):
                 columns=[{"name": i, "id": i} for i in player_win_rates_df.columns],
                 data=player_win_rates_df.to_dict('records'),
             )
+        ])
+    elif tab == 'player-elo-tab':
+        player_ratings_df = compute_historical_player_ratings(df, score_fun='linear')
+        player_ratings_plot = make_plotly_player_ts_ratings_plot(player_ratings_df)
+        return html.Div([
+            html.H3('Player Ratings'),
+            dcc.Graph(id= 'player-rating-ts-fig', figure=player_ratings_plot)
         ])
     else:
         return html.Div([

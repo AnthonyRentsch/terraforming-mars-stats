@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 import gspread # https://docs.gspread.org/en/latest/oauth2.html#oauth-client-id
+## note: if ever need to re-create and download oauth client secret, 
+## make sure to delete authorized_user.json file, which has token for login that needs to be removed ###
 
 corp_map = {
     'Aphrodite': {'clean_name': 'Aphrodite', 'origin': 'Venus'},
@@ -84,7 +86,8 @@ spreadsheets = [
     'August Mars',
     'July Mars',
     'June Mars',
-    'May Mars'
+    'May Mars',
+    'March-April Mars'
 ]
 
 def format_data(sheet, spreadsheet):
@@ -126,8 +129,18 @@ def format_data(sheet, spreadsheet):
         df['bgg'] = 0
 
     # game play data
-    df['corporation'] = df['Corp'].map(lambda x: corp_map[x]['clean_name'])
-    df['corporation_origin'] = df['Corp'].map(lambda x: corp_map[x]['origin'])
+    try:
+        df['corporation'] = df['Corp'].map(lambda x: corp_map[x]['clean_name'])
+        award_range = df.columns[2:5]
+        milestone_range = df.columns[5:8]
+    except:
+        df['corporation'] = 'UNKNOWN'
+        award_range = df.columns[1:4]
+        milestone_range = df.columns[4:7]
+    try:
+        df['corporation_origin'] = df['Corp'].map(lambda x: corp_map[x]['origin'])
+    except:
+        df['corporation_origin'] = 'UNKNOWN'
         
     df['terraform_rating'] = df['Base TR Score']
     df['num_greeneries'] = df['Greeneries']
@@ -139,6 +152,7 @@ def format_data(sheet, spreadsheet):
         df['total_percent_of_points'] = df['%']
     except:
         df['total_percent_of_points'] = df['Total'] / sum(df['Total'])
+    df['point_diff'] = max(df['Total']) - df['Total']
     df['place'] = df['total_points'].rank(ascending=False)
 
     try:
@@ -150,7 +164,7 @@ def format_data(sheet, spreadsheet):
             df['num_colonies'] = 0
     df['is_winner'] = [1 if total == max(df['Total']) else 0 for total in df['Total'] ]
 
-    for i, award_col in enumerate(df.columns[2:5]):
+    for i, award_col in enumerate(award_range):
         award_num = i + 1
         award_name = award_col.split('(')[0]
         try:
@@ -161,7 +175,7 @@ def format_data(sheet, spreadsheet):
         df[f'award_{award_num}_funder'] = award_funder
         df[f'award_{award_num}_points'] = df[award_col]
 
-    for i, milestone_col in enumerate(df.columns[5:8]):
+    for i, milestone_col in enumerate(milestone_range):
         milestone_num = i + 1
         milestone_name = milestone_col.split('(')[0]
         #milestone_funder = milestone_col.split('(')[1].replace(')', '')
@@ -176,7 +190,7 @@ def format_data(sheet, spreadsheet):
                  'award_1_name','award_1_funder','award_2_name','award_2_funder','award_3_name','award_3_funder',
                  'milestone_1_name','milestone_2_name','milestone_3_name',
                  'award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points',
-                 'total_points','total_percent_of_points','is_winner']
+                 'total_points','total_percent_of_points','point_diff','is_winner','place']
 
     df = df[keep_cols]
     df.reset_index(inplace=True)
@@ -209,9 +223,11 @@ if __name__ == '__main__':
                     i += 1
                 else:
                     j += 1
+            except gspread.exceptions.APIError:
+                time.sleep(60) # handle API limit for March-April Mars sheet, which is larger than the others
             except:
                 running = False
         print(f"Loop done for {spreadsheet}")
 
 full_df = pd.concat(df_dict.values())
-full_df.to_csv('terraforming-mars-stats.csv', index=False)
+full_df.to_csv('../terraforming-mars-stats.csv', index=False)
