@@ -18,11 +18,14 @@ from tm_stats.elo import compute_historical_player_ratings, compute_historical_c
 df = pd.read_csv('https://raw.githubusercontent.com/AnthonyRentsch/terraforming-mars-stats/main/terraforming-mars-stats.csv')
 
 # pre-computed fields
-## future step - figure out how to default to these and then update if someone selects a different scoring function
+most_recent_game_date = max(df.date)
+most_recent_game_df = df[df.date == max(df.date)]
+
+### future step - allow people to change players or expansions selected for viewing
 players_to_display = ['Ben','Ezra','Matt','Pat','Tony']
 corps_to_display = set(df[df.corporation_origin=='Base'].corporation.unique()) - set(['Beginner'])
-most_recent_game = max(df.date)
 
+### future step - figure out how to default to these and then update if someone selects a different scoring function
 player_ratings_df = compute_historical_player_ratings(df, score_fun='linear')
 corp_ratings_df = compute_historical_corp_ratings(df, score_fun='linear')
 
@@ -31,7 +34,6 @@ most_recent_player_ratings_df['rating'] = np.round(most_recent_player_ratings_df
 
 most_recent_corp_ratings_df = corp_ratings_df[(corp_ratings_df.corporation.isin(corps_to_display)) & (corp_ratings_df.date == max(corp_ratings_df.date))][['corporation','rating']].sort_values(by='rating', ascending=False)
 most_recent_corp_ratings_df['rating'] = np.round(most_recent_corp_ratings_df['rating'].astype(float), decimals = 0)
-
 
 # app
 app = dash.Dash() 
@@ -59,7 +61,23 @@ def render_content(tab):
     if tab == 'summary-tab':
         player_win_rates_df = get_player_win_rates_table(df)
         return html.Div([
-            html.H3(f'Most recent game: {most_recent_game}'),
+            html.H3(f'Most recent game: {most_recent_game_date}', style = {
+                'text-decoration': 'underline'
+            }),
+            html.Plaintext(f'''Board: {most_recent_game_df['board'][0]}
+            \nExpansions: {", ".join([col for col in ['prelude','venus','colonies','turmoil','bgg'] if most_recent_game_df[col].sum() == most_recent_game_df.shape[0]])}
+            \nAward 1: {most_recent_game_df['award_1_name'][0]} (funder = {most_recent_game_df['award_1_funder'][0]})
+            \nAward 2: {most_recent_game_df['award_2_name'][0]} (funder = {most_recent_game_df['award_2_funder'][0]})
+            \nAward 3: {most_recent_game_df['award_3_name'][0]} (funder = {most_recent_game_df['award_3_funder'][0]})
+            \nMilestone 1: {most_recent_game_df['milestone_1_name'][0]}
+            \nMilestone 2: {most_recent_game_df['milestone_2_name'][0]}
+            \nMilestone 3: {most_recent_game_df['milestone_3_name'][0]}'''
+            ),
+            dash_table.DataTable(
+                id='most-recent-game-table',
+                columns=[{"name": i, "id":i} for i in most_recent_game_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjancies','card_points','total_points']].set_index('player').T.reset_index().columns],
+                data=most_recent_game_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjancies','card_points','total_points']].set_index('player').T.reset_index().to_dict('records'),
+            ),
             html.Br(),
             html.H3('Player Win Rates'),
             dash_table.DataTable(
@@ -82,7 +100,7 @@ def render_content(tab):
         return html.Div([
             html.H2('Player Ratings'),
             html.Br(),
-            html.H4(f'Updated ratings (as of {most_recent_game})'),
+            html.H4(f'Updated ratings (as of {most_recent_game_date})'),
             dash_table.DataTable(
                 id='player-ratings-table',
                 columns=[{"name": i, "id": i} for i in most_recent_player_ratings_df.columns],
@@ -105,7 +123,7 @@ def render_content(tab):
         return html.Div([
             html.H2('Corporation Ratings'),
             html.Br(),
-            html.H4(f'Updated ratings (as of {most_recent_game})'),
+            html.H4(f'Updated ratings (as of {most_recent_game_date})'),
             dash_table.DataTable(
                 id='corp-ratings-table',
                 columns=[{"name": i, "id": i} for i in most_recent_corp_ratings_df.columns],
