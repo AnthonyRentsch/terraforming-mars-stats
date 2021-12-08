@@ -3,8 +3,7 @@
 import numpy as np
 import pandas as pd
 
-from plotly.tools import mpl_to_plotly
-import matplotlib.pyplot as plt
+import plotly.express as px
 
 # scoring functions
 def linear_score(p, n):
@@ -131,7 +130,6 @@ def compute_historical_corp_ratings(df, score_fun='linear'):
 
     for game_id in unique_sorted_game_ids:
         game_df = df[df['game_id'] == game_id]
-        game_df['place'] = game_df['total_points'].rank(ascending=False)
         
         new_ratings = {}
         current_ratings_active_corps = {corp: rating for corp, rating in current_ratings.items() if corp in game_df.corporation.unique()}
@@ -165,27 +163,34 @@ def compute_historical_corp_ratings(df, score_fun='linear'):
 
 def make_plotly_player_ts_ratings_plot(player_ratings_df):
     '''
+    Args:
+        player_ratings_df : pd.Dataframe
+            Output from compute_historical_player_ratings()
+    Returns:
+        fig : plotly object
     '''
-    fig, ax = plt.subplots(1,1, figsize=(20,10))
 
-    for player in ['Ben','Ezra','Matt','Pat','Tony']:#player_ratings_df.player.unique():
-        player_rating_df = player_ratings_df[player_ratings_df['player']==player]
-        ax.plot(player_rating_df.date, player_rating_df.rating, label=player)
-    ax.legend()
+    fig = px.line(
+        player_ratings_df[player_ratings_df.player.isin(['Ben','Ezra','Matt','Pat','Tony'])]
+        , x="date"
+        , y="rating"
+        , color='player')
+    return fig
 
-    plotly_fig = mpl_to_plotly(fig)
-    return plotly_fig
-
-def make_plotly_corp_ts_ratings_plot(corp_ratings_df):
+def make_plotly_corp_ts_ratings_plot(corp_ratings_df, df):
     '''
+    Args:
+        corp_ratings_df : pd.Dataframe
+            Output from compute_historical_corp_ratings()
+        df : pd.DataFrame
+            All game data, i.e., terraforming-mars-stats.csv. Needed to filter corps by expansion.
+    Returns :
+        fig : plotly object
     '''
-    fig, ax = plt.subplots(1,1, figsize=(20,15))
 
-    for corp in set(df[df.corporation_origin=='Base'].corporation.unique()) - set(['Beginner']):
-        corp_rating_df = corp_ratings_df[corp_ratings_df['corporation']==corp][1:100]
-        ax.plot(corp_rating_df.date, corp_rating_df.rating, label=corp)
-    ax.legend()
-    ax.set_title('Corporation Ratings')
-
-    plotly_fig = mpl_to_plotly(fig)
-    return plotly_fig
+    fig = px.line(
+        corp_ratings_df[corp_ratings_df.corporation.isin(set(df[df.corporation_origin=='Base'].corporation.unique()) - set(['Beginner']))]
+        , x="date"
+        , y="rating"
+        , color='corporation')
+    return fig
