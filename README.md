@@ -5,3 +5,7 @@ This repository contains my work to create a dashboard with statistics from all 
 To view the dashboard, which is deployed as a Heroku app visit https://terraforming-mars-stats.herokuapp.com/.
 
 Hope you enjoy :slightly_smiling_face:
+
+Credits:
+    - [Multiplayer ELO formulation](https://towardsdatascience.com/developing-a-generalized-elo-rating-system-for-multiplayer-games-b9b495e87802)
+    - [Deploying a Dash app to Heroku](https://medium.com/analytics-vidhya/how-to-deploy-a-dashboard-to-heroku-3b458f321c93)
