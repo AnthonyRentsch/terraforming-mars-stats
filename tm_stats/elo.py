@@ -160,6 +160,8 @@ def compute_historical_corp_ratings(df, score_fun='linear'):
                             for corp in corp_ratings.keys()]
     corp_ratings_df = pd.concat(corp_rating_dfs_list)
     corp_ratings_df.columns = ['game_number','date','rating','corporation']
+    corp_ratings_df['corporation_origin'] = corp_ratings_df['corporation'].map({corp: corp_origin for corp, corp_origin in set(zip(df.corporation, df.corporation_origin))})
+
     return corp_ratings_df
 
 def make_plotly_player_ts_ratings_plot(player_ratings_df):
@@ -172,7 +174,7 @@ def make_plotly_player_ts_ratings_plot(player_ratings_df):
     '''
 
     fig = px.line(
-        player_ratings_df[player_ratings_df.player.isin(['Ben','Ezra','Matt','Pat','Tony'])]
+        player_ratings_df
         , x="date"
         , y="rating"
         , color='player')
@@ -190,7 +192,7 @@ def make_plotly_corp_ts_ratings_plot(corp_ratings_df, df):
     '''
 
     fig = px.line(
-        corp_ratings_df[corp_ratings_df.corporation.isin(set(df[df.corporation_origin=='Base'].corporation.unique()) - set(['Beginner']))]
+        corp_ratings_df
         , x="date"
         , y="rating"
         , color='corporation')
