@@ -26,17 +26,11 @@ players_to_display = ['Ben','Ezra','Matt','Pat','Tony']
 corps_to_display = set(df[df.corporation_origin=='Base'].corporation.unique()) - set(['Beginner'])
 
 ### future step - figure out how to default to these and then update if someone selects a different scoring function
-player_ratings_df = compute_historical_player_ratings(df, score_fun='linear')
-corp_ratings_df = compute_historical_corp_ratings(df, score_fun='linear')
-
-most_recent_player_ratings_df = player_ratings_df[(player_ratings_df.player.isin(players_to_display)) & (player_ratings_df.date == max(player_ratings_df.date))][['player','rating']].sort_values(by='rating', ascending=False)
-most_recent_player_ratings_df['rating'] = np.round(most_recent_player_ratings_df['rating'].astype(float), decimals = 0)
-
 most_recent_corp_ratings_df = corp_ratings_df[(corp_ratings_df.corporation.isin(corps_to_display)) & (corp_ratings_df.date == max(corp_ratings_df.date))][['corporation','rating']].sort_values(by='rating', ascending=False)
 most_recent_corp_ratings_df['rating'] = np.round(most_recent_corp_ratings_df['rating'].astype(float), decimals = 0)
 
 # app
-app = dash.Dash() 
+app = dash.Dash(__name__) 
 server = app.server
 
 app.layout = html.Div(
@@ -64,14 +58,14 @@ def render_content(tab):
             html.H3(f'Most recent game: {most_recent_game_date}', style = {
                 'text-decoration': 'underline'
             }),
-            html.Plaintext(f'''Board: {most_recent_game_df['board'][0]}
-            \nExpansions: {", ".join([col for col in ['prelude','venus','colonies','turmoil','bgg'] if most_recent_game_df[col].sum() == most_recent_game_df.shape[0]])}
-            \nAward 1: {most_recent_game_df['award_1_name'][0]} (funder = {most_recent_game_df['award_1_funder'][0]})
-            \nAward 2: {most_recent_game_df['award_2_name'][0]} (funder = {most_recent_game_df['award_2_funder'][0]})
-            \nAward 3: {most_recent_game_df['award_3_name'][0]} (funder = {most_recent_game_df['award_3_funder'][0]})
-            \nMilestone 1: {most_recent_game_df['milestone_1_name'][0]}
-            \nMilestone 2: {most_recent_game_df['milestone_2_name'][0]}
-            \nMilestone 3: {most_recent_game_df['milestone_3_name'][0]}'''
+            html.Markdown(f'''**Board**: {most_recent_game_df['board'][0]}
+            \n**Expansions**: {", ".join([col for col in ['prelude','venus','colonies','turmoil','bgg'] if most_recent_game_df[col].sum() == most_recent_game_df.shape[0]])}
+            \n**Award 1**: {most_recent_game_df['award_1_name'][0]} (funder = {most_recent_game_df['award_1_funder'][0]})
+            \n**Award 2**: {most_recent_game_df['award_2_name'][0]} (funder = {most_recent_game_df['award_2_funder'][0]})
+            \n**Award 3**: {most_recent_game_df['award_3_name'][0]} (funder = {most_recent_game_df['award_3_funder'][0]})
+            \n**Milestone 1**: {most_recent_game_df['milestone_1_name'][0]}
+            \n**Milestone 2**: {most_recent_game_df['milestone_2_name'][0]}
+            \n**Milestone 3**: {most_recent_game_df['milestone_3_name'][0]}'''
             ),
             dash_table.DataTable(
                 id='most-recent-game-table',
@@ -96,29 +90,28 @@ def render_content(tab):
             )
         ])
     elif tab == 'player-elo-tab':
-        player_ratings_plot = make_plotly_player_ts_ratings_plot(player_ratings_df)
         return html.Div([
             html.H2('Player Ratings'),
             html.Br(),
-            html.H4(f'Updated ratings (as of {most_recent_game_date})'),
-            dash_table.DataTable(
-                id='player-ratings-table',
-                columns=[{"name": i, "id": i} for i in most_recent_player_ratings_df.columns],
-                data=most_recent_player_ratings_df.to_dict('records'),
-
-                style_header={
-                    'backgroundColor': 'rgb(30, 30, 30)',
-                    'color': 'white'
-                },
-                style_data={
-                    'backgroundColor': 'rgb(50, 50, 50)',
-                    'color': 'white'
-                }
+            dcc.Dropdown(
+                id='player-elo-options-dropdown',
+                options=[
+                    {'label': 'All games', 'value': 'all'},
+                    {'label': 'Only two player games', 'value': 'two-player'},
+                    {'label': 'Only non-two player games', 'value':'non-two-player'}
+                ]
             ),
-            html.Br(),
-            dcc.Graph(id= 'player-rating-ts-fig', figure=player_ratings_plot)
+            dcc.Dropdown(
+                id='player-elo-score-function-dropdown',
+                options=[
+                    {'label': 'Linear', 'value': 'linear'},
+                    {'label': 'Exponential', 'value': 'exp'}
+                ]
+            ),
+            html.Div(id='player-elo-div')
         ])
     elif tab == 'corporation-elo-tab':
+        corp_ratings_df = compute_historical_corp_ratings(df, score_fun='linear') # diff score fun
         corp_ratings_plot = make_plotly_corp_ts_ratings_plot(corp_ratings_df, df)
         return html.Div([
             html.H2('Corporation Ratings'),
@@ -146,10 +139,59 @@ def render_content(tab):
             html.H3('Coming soon...')
         ])
 
+#########################################################################################################
 def get_player_win_rates_table(df):
     return df.groupby('player').\
     agg(wins = ('is_winner','sum'), games = ('is_winner', 'count'), win_rate = ('is_winner','mean')).\
     sort_values(by='win_rate', ascending=False).reset_index()
+
+@app.callback(
+    Output('player-elo-div', 'children'),
+    Input('player-elo-options-dropdown', 'num_player_category'),
+    Input('player-elo-score-function-dropdown', 'score_fun')
+)
+def make_player_elo_div(num_player_category, score_fun):
+    if num_player_category == 'all'
+        df_ = df
+    elif num_player_category == 'two-player':
+        df_ = df[df.num_players==2]
+    elif num_player_category == 'non-two-player':
+        df_ = df[df.num_players!=2]
+
+    player_ratings_df = compute_historical_player_ratings(df = df_, score_fun = score_fun)
+    player_ratings_plot = make_plotly_player_ts_ratings_plot(player_ratings_df)
+
+    most_recent_player_ratings_df = player_ratings_df[(player_ratings_df.player.isin(players_to_display)) & (player_ratings_df.date == max(player_ratings_df.date))][['player','rating']].sort_values(by='rating', ascending=False)
+    most_recent_player_ratings_df['rating'] = np.round(most_recent_player_ratings_df['rating'].astype(float), decimals = 0)
+    
+    return html.Div([
+        html.H4(f'Updated ratings (as of {most_recent_game_date})'),
+        dash_table.DataTable(
+            id='player-ratings-table',
+            columns=[{"name": i, "id": i} for i in most_recent_player_ratings_df.columns],
+            data=most_recent_player_ratings_df.to_dict('records'),
+            style_header={
+                'backgroundColor': 'rgb(30, 30, 30)',
+                'color': 'white'
+            },
+            style_data={
+                'backgroundColor': 'rgb(50, 50, 50)',
+                'color': 'white'
+            }
+        ),
+        html.Br(),
+        dcc.Graph(id='player-rating-ts-fig', figure=player_ratings_plot)
+    ])
+
+@app.callback(
+    Output(''),
+    Input('corp-elo-options-dropdown', 'corp_origin_category')
+)
+def get_corp_elo_plot():
+    compute_historical_player_ratings()
+    make_plotly_player_ts_ratings_plot()
+    return 
+
 
 if __name__ == '__main__': 
     app.run_server(port=8000, host='127.0.0.1', debug=True)

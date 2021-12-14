@@ -23,7 +23,8 @@ def exp_score(p, n, alpha=2.):
             Finishing place
         n : int 
             # of players
-        alpha : exists in (1,inf)'''
+        alpha : exists in (1,inf)
+    '''
     return (alpha**(n-p) - 1) / np.sum([(alpha**(n-i) - 1) for i in range(1,n)])
 
 # expected score

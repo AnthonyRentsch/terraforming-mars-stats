@@ -101,7 +101,7 @@ def format_data(sheet, spreadsheet):
 
     # metadata
     date = str(sheet).split("'")[1].split('(')[0].strip()
-    df['game_id'] = hash(f"{str(spreadsheet)}_{str(sheet)}")
+    df['game_id_temp'] = hash(f"{str(spreadsheet)}_{str(sheet)}")
     df['date'] = pd.to_datetime(date)
     df['num_players'] = df.shape[0]
     
@@ -184,7 +184,7 @@ def format_data(sheet, spreadsheet):
         df[f'milestone_{milestone_num}_points'] = df[milestone_col]
 
     # keep good columns
-    keep_cols = ['game_id','date','num_players','board','prelude','venus','colonies','turmoil','bgg',
+    keep_cols = ['game_id_temp','date','num_players','board','prelude','venus','colonies','turmoil','bgg',
                  'corporation','corporation_origin','terraform_rating',
                  'num_greeneries','num_cities','num_colonies','num_greenery_adjancies','card_points',
                  'award_1_name','award_1_funder','award_2_name','award_2_funder','award_3_name','award_3_funder',
@@ -230,4 +230,11 @@ if __name__ == '__main__':
         print(f"Loop done for {spreadsheet}")
 
 full_df = pd.concat(df_dict.values())
+
+# create better game id
+unique_sorted_game_id_temp = pd.Series([x for _,x in sorted(zip(full_df.date, full_df.game_id_temp))]).unique()
+new_game_id_map = {game_id_temp: i+1 for i, game_id_temp in enumerate(unique_sorted_game_id_temp)}
+full_df['game_id'] = full_df['game_id_temp'].map(new_game_id_map)
+full_df.drop('game_id_temp', axis=1, inplace=True)
+
 full_df.to_csv('../terraforming-mars-stats.csv', index=False)
