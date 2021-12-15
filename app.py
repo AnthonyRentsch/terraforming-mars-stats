@@ -23,7 +23,8 @@ most_recent_game_df = df[df.date == max(df.date)]
 # app
 app = dash.Dash(__name__
                 , suppress_callback_exceptions=True
-                , external_stylesheets = 'assets/style.css') 
+                #, external_stylesheets = 'assets/style.css'
+                ) 
 server = app.server
 
 app.layout = html.Div(
@@ -46,7 +47,7 @@ app.layout = html.Div(
         ]),
         html.Div(id='tab-content')
 
-    ]
+    ], className = 'background'
 )
 
 @app.callback(Output('tab-content', 'children'),
@@ -65,7 +66,7 @@ def render_content(tab):
             \n**Milestone 1**: {most_recent_game_df['milestone_1_name'][0]}
             \n**Milestone 2**: {most_recent_game_df['milestone_2_name'][0]}
             \n**Milestone 3**: {most_recent_game_df['milestone_3_name'][0]}'''
-            ),
+            , className = 'p'),
             dash_table.DataTable(
                 id='most-recent-game-table',
                 columns=[{"name": i, "id":i} for i in most_recent_game_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjancies','card_points','total_points']].set_index('player').T.reset_index().columns],
@@ -77,7 +78,13 @@ def render_content(tab):
                 style_data={
                     'backgroundColor': 'rgb(50, 50, 50)',
                     'color': 'white'
-                }
+                },
+                style_table={
+                    'width':'50%',
+                    'margin-left':'auto',
+                    'margin-right':'auto'
+                },
+                include_headers_on_copy_paste=True
             )
         ])
     elif tab == 'player-stats-tab':
@@ -178,7 +185,13 @@ def get_player_win_rates_table(players_to_include):
             style_data={
                 'backgroundColor': 'rgb(50, 50, 50)',
                 'color': 'white'
-            }
+            },
+            style_table={
+                'width':'50%',
+                'margin-left':'auto',
+                'margin-right':'auto'
+            },
+            include_headers_on_copy_paste=True
         )
     ])
 
@@ -203,7 +216,7 @@ def make_player_elo_div(num_player_category, score_fun, included_players):
     most_recent_player_ratings_df['rating'] = np.round(most_recent_player_ratings_df['rating'].astype(float), decimals = 0)
     
     return html.Div([
-        html.H4(f'Updated ratings (as of {most_recent_game_date})'),
+        html.H3(f'Current ratings (as of {most_recent_game_date})'),
         dash_table.DataTable(
             id='player-ratings-table',
             columns=[{"name": i, "id": i} for i in most_recent_player_ratings_df.columns],
@@ -215,7 +228,13 @@ def make_player_elo_div(num_player_category, score_fun, included_players):
             style_data={
                 'backgroundColor': 'rgb(50, 50, 50)',
                 'color': 'white'
-            }
+            },
+            style_table={
+                'width':'50%',
+                'margin-left':'auto',
+                'margin-right':'auto'
+            },
+            include_headers_on_copy_paste=True
         ),
         html.Br(),
         dcc.Graph(id='player-rating-ts-fig', figure=player_ratings_plot)
@@ -236,7 +255,7 @@ def make_corp_elo_div(corps_to_display, score_fun):
     most_recent_corp_ratings_df['rating'] = np.round(most_recent_corp_ratings_df['rating'].astype(float), decimals = 0)
 
     return html.Div([
-        html.H4(f'Updated ratings (as of {most_recent_game_date})'),
+        html.H3(f'Current ratings (as of {most_recent_game_date})'),
         dash_table.DataTable(
             id='corp-ratings-table',
             columns=[{"name": i, "id": i} for i in most_recent_corp_ratings_df.columns],
@@ -248,7 +267,13 @@ def make_corp_elo_div(corps_to_display, score_fun):
             style_data={
                 'backgroundColor': 'rgb(50, 50, 50)',
                 'color': 'white'
-            }
+            },
+            style_table={
+                'width':'50%',
+                'margin-left':'auto',
+                'margin-right':'auto'
+            },
+            include_headers_on_copy_paste=True
         ),
         html.Br(),
         dcc.Graph(id= 'corp-rating-ts-fig', figure=corp_ratings_plot)
