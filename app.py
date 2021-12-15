@@ -1,8 +1,6 @@
 # set up
 import dash
-from dash import dash_table
-from dash import dcc
-from dash import html 
+from dash import dcc, html, dash_table
 from dash.dependencies import Input, Output 
 
 import requests 
@@ -23,22 +21,31 @@ most_recent_game_date = max(df.date)
 most_recent_game_df = df[df.date == max(df.date)]
 
 # app
-app = dash.Dash(__name__, suppress_callback_exceptions=True) 
+app = dash.Dash(__name__
+                , suppress_callback_exceptions=True
+                , external_stylesheets = 'assets/style.css') 
 server = app.server
 
 app.layout = html.Div(
     [ 
         html.H1(
             'Terraforming Mars Statistics',
-            style = {'text-align' : 'center'}
+            # style = {
+            #     'text-align': 'center',
+            #     'color': 'white',
+            #     'opacity': '0.7',
+            #     'background-image':'url("/assets/simple_space.jpeg")',
+            #     'background-blend-mode':'lighten'
+            #     }
         ),
         dcc.Tabs(id="app-tabs", value='most-recent-game-tab', children=[
             dcc.Tab(label='Most Recent Game', value='most-recent-game-tab'),
             dcc.Tab(label='Player Statistics', value='player-stats-tab'),
             dcc.Tab(label='Player ELO', value='player-elo-tab'),
             dcc.Tab(label='Corporation ELO', value='corporation-elo-tab')
-    ]),
+        ]),
         html.Div(id='tab-content')
+
     ]
 )
 
@@ -74,23 +81,20 @@ def render_content(tab):
             )
         ])
     elif tab == 'player-stats-tab':
-        player_win_rates_df = get_player_win_rates_table(df)
         return html.Div([
-            html.H3('Player Win Rates'),
-            dash_table.DataTable(
-                id='player-win-rates-table',
-                columns=[{"name": i, "id": i} for i in player_win_rates_df.columns],
-                data=player_win_rates_df.to_dict('records'),
-                style_header={
-                    'backgroundColor': 'rgb(30, 30, 30)',
-                    'color': 'white'
-                },
-                style_data={
-                    'backgroundColor': 'rgb(50, 50, 50)',
-                    'color': 'white'
-                }
-            )
+            html.H2('Overall Player Win Rates'),
+            dcc.Dropdown(
+                id='player-win-rate-players-included-dropdown',
+                options=[
+                    {'label': name, 'value': name} for name in sorted(df.player.unique())
+                ],
+                multi=True,
+                value=['Ben','Ezra','Matt','Pat','Tony']
+            ),
+            html.Br(),
+            html.Div(id='player-win-rate-div')
         ])
+
     elif tab == 'player-elo-tab':
         return html.Div([
             html.H4('Game Type'),
@@ -151,10 +155,32 @@ def render_content(tab):
         ])
 
 #########################################################################################################
-def get_player_win_rates_table(df):
-    return df.groupby('player').\
+@app.callback(
+    Output('player-win-rate-div','children'),
+    Input('player-win-rate-players-included-dropdown', 'value')
+)
+def get_player_win_rates_table(players_to_include):
+    player_win_rates_df_ = df.groupby('player').\
     agg(wins = ('is_winner','sum'), games = ('is_winner', 'count'), win_rate = ('is_winner','mean')).\
     sort_values(by='win_rate', ascending=False).reset_index()
+
+    player_win_rates_df = player_win_rates_df_[player_win_rates_df_.player.isin(players_to_include)]
+
+    return html.Div([
+        dash_table.DataTable(
+            id='player-win-rates-table',
+            columns=[{"name": i, "id": i} for i in player_win_rates_df.columns],
+            data=player_win_rates_df.to_dict('records'),
+            style_header={
+                'backgroundColor': 'rgb(30, 30, 30)',
+                'color': 'white'
+            },
+            style_data={
+                'backgroundColor': 'rgb(50, 50, 50)',
+                'color': 'white'
+            }
+        )
+    ])
 
 @app.callback(
     Output('player-elo-div', 'children'),
