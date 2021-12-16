@@ -23,7 +23,6 @@ most_recent_game_df = df[df.date == max(df.date)]
 # app
 app = dash.Dash(__name__
                 , suppress_callback_exceptions=True
-                #, external_stylesheets = 'assets/style.css'
                 ) 
 server = app.server
 
@@ -69,8 +68,8 @@ def render_content(tab):
             , className = 'p'),
             dash_table.DataTable(
                 id='most-recent-game-table',
-                columns=[{"name": i, "id":i} for i in most_recent_game_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjancies','card_points','total_points']].set_index('player').T.reset_index().columns],
-                data=most_recent_game_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjancies','card_points','total_points']].set_index('player').T.reset_index().to_dict('records'),
+                columns=[{"name": i, "id":i} for i in most_recent_game_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points','total_points']].set_index('player').T.reset_index().columns],
+                data=most_recent_game_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points','total_points']].set_index('player').T.reset_index().to_dict('records'),
                 style_header={
                     'backgroundColor': 'rgb(30, 30, 30)',
                     'color': 'white'
@@ -90,6 +89,7 @@ def render_content(tab):
     elif tab == 'player-stats-tab':
         return html.Div([
             html.H2('Overall Player Win Rates'),
+            html.H4('Players Included (in output)'),
             dcc.Dropdown(
                 id='player-win-rate-players-included-dropdown',
                 options=[
@@ -99,7 +99,17 @@ def render_content(tab):
                 value=['Ben','Ezra','Matt','Pat','Tony']
             ),
             html.Br(),
-            html.Div(id='player-win-rate-div')
+            html.Div(id='player-win-rate-div'),
+            html.Br(),
+            html.H4('Choose a player to learn more about'),
+            dcc.Dropdown(
+                id='player-drill-down-dropdown',
+                options=[
+                    {'label': name, 'value': name} for name in sorted(df.player.unique())
+                ],
+                value='Tony'
+            ),
+            html.Div(id='player-drill-down-div')
         ])
 
     elif tab == 'player-elo-tab':
@@ -123,7 +133,7 @@ def render_content(tab):
                 ],
                 value='linear'
             ),
-            html.H4('Players Included'),
+            html.H4('Players Included (in output)'),
             dcc.Dropdown(
                 id='player-elo-players-included-dropdown',
                 options=[
@@ -136,7 +146,7 @@ def render_content(tab):
         ])
     elif tab == 'corporation-elo-tab':
         return html.Div([
-            html.H4('Expansions Included'),
+            html.H4('Expansions Included (in output)'),
             dcc.Dropdown(
                 id='corp-elo-expansion-included-dropdown',
                 options=[
@@ -277,6 +287,48 @@ def make_corp_elo_div(corps_to_display, score_fun):
         ),
         html.Br(),
         dcc.Graph(id= 'corp-rating-ts-fig', figure=corp_ratings_plot)
+    ])
+
+@app.callback(
+    Output('player-drill-down-div','children'),
+    Input('player-drill-down-dropdown', 'value')
+)
+def make_player_most_recent_win_div(player):
+    player_df = df[df.player == player]
+    player_most_recent_win_df = player_df[player_df['is_winner']==1].sort_values(by='date', ascending=False).head(1)
+
+    return html.Div([
+        html.H3(f'Most recent win: {most_recent_game_date}', style = {
+            'text-decoration': 'underline'
+        }),
+        dcc.Markdown(f'''**Board**: {player_most_recent_win_df['board'][0]}
+        \n**Expansions**: {", ".join([col for col in ['prelude','venus','colonies','turmoil','bgg'] if player_most_recent_win_df[col].sum() == most_recent_game_df.shape[0]])}
+        \n**Award 1**: {player_most_recent_win_df['award_1_name'][0]} (funder = {player_most_recent_win_df['award_1_funder'][0]})
+        \n**Award 2**: {player_most_recent_win_df['award_2_name'][0]} (funder = {player_most_recent_win_df['award_2_funder'][0]})
+        \n**Award 3**: {player_most_recent_win_df['award_3_name'][0]} (funder = {player_most_recent_win_df['award_3_funder'][0]})
+        \n**Milestone 1**: {player_most_recent_win_df['milestone_1_name'][0]}
+        \n**Milestone 2**: {player_most_recent_win_df['milestone_2_name'][0]}
+        \n**Milestone 3**: {player_most_recent_win_df['milestone_3_name'][0]}'''
+        , className = 'p'),
+        dash_table.DataTable(
+            id='most-recent-player-win-table',
+            columns=[{"name": i, "id":i} for i in player_most_recent_win_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points','total_points']].set_index('player').T.reset_index().columns],
+            data=player_most_recent_win_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points','total_points']].set_index('player').T.reset_index().to_dict('records'),
+            style_header={
+                'backgroundColor': 'rgb(30, 30, 30)',
+                'color': 'white'
+            },
+            style_data={
+                'backgroundColor': 'rgb(50, 50, 50)',
+                'color': 'white'
+            },
+            style_table={
+                'width':'50%',
+                'margin-left':'auto',
+                'margin-right':'auto'
+            },
+            include_headers_on_copy_paste=True
+        )
     ])
 
 

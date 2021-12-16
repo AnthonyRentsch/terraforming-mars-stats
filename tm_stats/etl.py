@@ -145,7 +145,7 @@ def format_data(sheet, spreadsheet):
     df['terraform_rating'] = df['Base TR Score']
     df['num_greeneries'] = df['Greeneries']
     df['num_cities'] = df['Cities (for ref, not points)']
-    df['num_greenery_adjancies'] = df['Greeneries adj to Cities']
+    df['num_greenery_adjacencies'] = df['Greeneries adj to Cities']
     df['card_points'] = df['Points from Cards:']
     df['total_points'] = df['Total']
     try:
@@ -186,7 +186,7 @@ def format_data(sheet, spreadsheet):
     # keep good columns
     keep_cols = ['game_id_temp','date','num_players','board','prelude','venus','colonies','turmoil','bgg',
                  'corporation','corporation_origin','terraform_rating',
-                 'num_greeneries','num_cities','num_colonies','num_greenery_adjancies','card_points',
+                 'num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points',
                  'award_1_name','award_1_funder','award_2_name','award_2_funder','award_3_name','award_3_funder',
                  'milestone_1_name','milestone_2_name','milestone_3_name',
                  'award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points',
