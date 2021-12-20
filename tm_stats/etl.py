@@ -236,6 +236,12 @@ unique_sorted_game_id_temp = pd.Series([x for _,x in sorted(zip(full_df.date, fu
 new_game_id_map = {game_id_temp: i+1 for i, game_id_temp in enumerate(unique_sorted_game_id_temp)}
 full_df['game_id'] = full_df['game_id_temp'].map(new_game_id_map)
 full_df.drop('game_id_temp', axis=1, inplace=True)
-full_df = full_df[['game_id'] + list(set(full_df.columns) - set(['game_id']))]
+full_df = full_df[['game_id','date','player','num_players','board','prelude','venus','colonies','turmoil','bgg',
+                 'corporation','corporation_origin','terraform_rating',
+                 'num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points',
+                 'award_1_name','award_1_funder','award_2_name','award_2_funder','award_3_name','award_3_funder',
+                 'milestone_1_name','milestone_2_name','milestone_3_name',
+                 'award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points',
+                 'total_points','total_percent_of_points','point_diff','is_winner','place']]
 
 full_df.to_csv('../terraforming-mars-stats.csv', index=False)
