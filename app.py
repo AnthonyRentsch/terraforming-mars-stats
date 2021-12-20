@@ -31,16 +31,7 @@ server = app.server
 
 app.layout = html.Div(
     [ 
-        html.H1(
-            'Terraforming Mars Statistics',
-            # style = {
-            #     'text-align': 'center',
-            #     'color': 'white',
-            #     'opacity': '0.7',
-            #     'background-image':'url("/assets/simple_space.jpeg")',
-            #     'background-blend-mode':'lighten'
-            #     }
-        ),
+        html.H1('Terraforming Mars Statistics'),
         dcc.Tabs(id="app-tabs", value='most-recent-game-tab', children=[
             dcc.Tab(label='Most Recent Game', value='most-recent-game-tab'),
             dcc.Tab(label='Player Statistics', value='player-stats-tab'),
@@ -48,9 +39,15 @@ app.layout = html.Div(
             dcc.Tab(label='Corporation ELO', value='corporation-elo-tab'),
             dcc.Tab(label='View Raw Data', value='raw-data-tab')
         ]),
-        html.Div(id='tab-content')
-
-    ], className = 'background'
+        html.Div(id='tab-content'),
+        html.Br(),
+        html.Div([
+            dcc.Markdown(
+                'Dashboard built by Anthony Rentsch. To view the source code or download the raw data, visit my [terraforming-mars-stats Github repository](https://github.com/AnthonyRentsch/terraforming-mars-stats)'
+                , className = 'footer'
+            )
+        ])
+    ]
 )
 
 @app.callback(Output('tab-content', 'children'),
