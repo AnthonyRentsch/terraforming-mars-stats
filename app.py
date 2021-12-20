@@ -189,9 +189,11 @@ def render_content(tab):
                 style_table={
                     'overflowY': 'scroll',
                     'overflowX': 'scroll',
+                    'minWidth': '100%'
                 },
                 filter_action='native',
-                page_size=50
+                page_size=50,
+                fixed_columns={'headers': True, 'data': 3}
             )
         ])
     else:
