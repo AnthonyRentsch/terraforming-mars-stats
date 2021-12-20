@@ -1,11 +1,11 @@
-.background {
+/* .background {
     position: relative; 
     height: 100vh;
     width: 100%;
     display: block;
 }
 
-.background::before {    
+.background::before {
       content: "";
       background-image: url("/assets/simple_space.jpeg");
       background-size: cover;
@@ -16,7 +16,7 @@
       left: 0px;
       opacity: 0.15;
       z-index: -1;
-}
+} */
 
 h1, h3, p {
     position: relative;
@@ -28,7 +28,7 @@ h2, h4 {
 }
 
 /* Tabs */
-/* .os-tab-parent {
+.os-tab-parent {
     width: auto;
 }
     
@@ -41,19 +41,16 @@ h2, h4 {
     
 .os-tab {
     width: auto;
-    background-color: #abc432 !important;
-    color: #323232;
-    vertical-align: middel !important;
+    vertical-align: middle !important;
     padding: 8px 10px 2px 10px !important;
 }
 
 .tab--selected{
-    background-color: #323232 !important;
-    border-top-color: #abc432 !important; 
-    color: #abc432 !important;
-    padding: 8px 10px 2px 10px !important;
+    color: white !important;
+    background-image: url("/assets/simple_space.jpeg");
+    vertical-align: middle !important;
 }
     
 .tab:hover{
-    color: white;
-} */
+    color: grey;
+}

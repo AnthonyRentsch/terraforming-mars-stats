@@ -4,10 +4,13 @@ from dash import dcc, html, dash_table
 from dash.dependencies import Input, Output 
 
 import requests 
-import plotly.graph_objects as go
 import pandas as pd
 import datetime
 import numpy as np
+
+import plotly.graph_objects as go
+import plotly.figure_factory as ff
+from plotly.subplots import make_subplots
 
 from tm_stats.elo import compute_historical_player_ratings, compute_historical_corp_ratings,\
                          make_plotly_player_ts_ratings_plot, make_plotly_corp_ts_ratings_plot
@@ -42,7 +45,8 @@ app.layout = html.Div(
             dcc.Tab(label='Most Recent Game', value='most-recent-game-tab'),
             dcc.Tab(label='Player Statistics', value='player-stats-tab'),
             dcc.Tab(label='Player ELO', value='player-elo-tab'),
-            dcc.Tab(label='Corporation ELO', value='corporation-elo-tab')
+            dcc.Tab(label='Corporation ELO', value='corporation-elo-tab'),
+            dcc.Tab(label='View Raw Data', value='raw-data-tab')
         ]),
         html.Div(id='tab-content')
 
@@ -109,7 +113,8 @@ def render_content(tab):
                 ],
                 value='Tony'
             ),
-            html.Div(id='player-drill-down-div')
+            html.Div(id='player-drill-down-div'),
+            html.Div(id='player-points-on-cards-div')
         ])
 
     elif tab == 'player-elo-tab':
@@ -165,6 +170,24 @@ def render_content(tab):
                 value='linear'
             ),
             html.Div(id='corp-elo-div')
+        ])
+    elif tab == 'raw-data-tab':
+        return html.Div([
+            html.Br(),
+            dash_table.DataTable(
+                id='raw-data-table',
+                columns=[{"name": i, "id":i} for i in df.columns],
+                data=df.to_dict('records'),
+                style_header={
+                    'backgroundColor': 'rgb(30, 30, 30)',
+                    'color': 'white'
+                },
+                style_data={
+                    'backgroundColor': 'rgb(50, 50, 50)',
+                    'color': 'white'
+                },
+                filter_action='native'
+            )
         ])
     else:
         return html.Div([
@@ -286,7 +309,7 @@ def make_corp_elo_div(corps_to_display, score_fun):
             include_headers_on_copy_paste=True
         ),
         html.Br(),
-        dcc.Graph(id= 'corp-rating-ts-fig', figure=corp_ratings_plot)
+        dcc.Graph(id='corp-rating-ts-fig', figure=corp_ratings_plot)
     ])
 
 @app.callback(
@@ -295,42 +318,89 @@ def make_corp_elo_div(corps_to_display, score_fun):
 )
 def make_player_most_recent_win_div(player):
     player_df = df[df.player == player]
-    player_most_recent_win_df = player_df[player_df['is_winner']==1].sort_values(by='date', ascending=False).head(1)
 
+    if player_df['is_winner'].sum() > 0:
+        player_most_recent_win_game_id = player_df[player_df['is_winner']==1].sort_values(by='date', ascending=False).head(1)['game_id'].values[0]
+        player_most_recent_win_df = df[df.game_id == player_most_recent_win_game_id]
+
+        return html.Div([
+            html.H3(f'Most recent win: {player_most_recent_win_df["date"].values[0]}', style = {
+                'text-decoration': 'underline'
+            }),
+            dcc.Markdown(f'''**Board**: {player_most_recent_win_df['board'].values[0]}
+            \n**Expansions**: {", ".join([col for col in ['prelude','venus','colonies','turmoil','bgg'] if player_most_recent_win_df[col].sum() == player_most_recent_win_df.shape[0]])}
+            \n**Award 1**: {player_most_recent_win_df['award_1_name'].values[0]} (funder = {player_most_recent_win_df['award_1_funder'].values[0]})
+            \n**Award 2**: {player_most_recent_win_df['award_2_name'].values[0]} (funder = {player_most_recent_win_df['award_2_funder'].values[0]})
+            \n**Award 3**: {player_most_recent_win_df['award_3_name'].values[0]} (funder = {player_most_recent_win_df['award_3_funder'].values[0]})
+            \n**Milestone 1**: {player_most_recent_win_df['milestone_1_name'].values[0]}
+            \n**Milestone 2**: {player_most_recent_win_df['milestone_2_name'].values[0]}
+            \n**Milestone 3**: {player_most_recent_win_df['milestone_3_name'].values[0]}'''
+            , className = 'p'),
+            dash_table.DataTable(
+                id='most-recent-player-win-table',
+                columns=[{"name": i, "id":i} for i in player_most_recent_win_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points','total_points']].set_index('player').T.reset_index().columns],
+                data=player_most_recent_win_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points','total_points']].set_index('player').T.reset_index().to_dict('records'),
+                style_header={
+                    'backgroundColor': 'rgb(30, 30, 30)',
+                    'color': 'white'
+                },
+                style_data={
+                    'backgroundColor': 'rgb(50, 50, 50)',
+                    'color': 'white'
+                },
+                style_table={
+                    'width':'50%',
+                    'margin-left':'auto',
+                    'margin-right':'auto'
+                },
+                include_headers_on_copy_paste=True
+            )
+        ])
+
+    else:
+        return html.Div([
+            html.H3('No wins yet!', style = {
+                'text-decoration': 'underline'
+            }),
+        ])
+
+@app.callback(
+    Output('player-points-on-cards-div', 'children'),
+    Input('player-drill-down-dropdown', 'value')
+)
+def make_player_points_on_card_div(player):
+    player_df = df[df.player == player]
+    fig = make_subplots(rows=1, cols=4, subplot_titles=[f'{i}-player' for i in sorted(df.num_players.unique())])
+
+    for i, n_players in enumerate(sorted(df.num_players.unique())):
+        player_df_num_players= player_df[player_df.num_players==n_players]
+        other_player_df_num_players = df[(df.player!= player) & (df.num_players==n_players)]
+        
+        hist_data = [player_df_num_players.card_points, other_player_df_num_players.card_points]
+
+        group_labels = [player, 'Field']
+        colors = ['blue', 'grey']
+
+        data_ = ff.create_distplot(hist_data, group_labels, colors=colors, bin_size=5)
+        
+        if i > 0:
+            fig.add_trace(go.Histogram(data_['data'][0], marker_color='blue', showlegend=False), row=1, col=i+1)
+            fig.add_trace(go.Histogram(data_['data'][1], marker_color='grey', showlegend=False), row=1, col=i+1) 
+        else:
+            fig.add_trace(go.Histogram(data_['data'][0], marker_color='blue'), row=1, col=i+1)
+            fig.add_trace(go.Histogram(data_['data'][1], marker_color='grey'), row=1, col=i+1)
+
+    #     fig.add_trace(go.Scatter(data_['data'][2], line=dict(color='blue', width=0.5)),
+    #                   row=1, col=i+1)
+    #     fig.add_trace(go.Scatter(data_['data'][3], line=dict(color='grey', width=0.5)),
+    #                   row=1, col=i+1)
+        
+        
+    fig.update_layout(title_text=f'Points from Cards: {player} vs. Field', title_x=0.5, plot_bgcolor='rgba(0,0,0,0)')
+    fig.update_yaxes(showticklabels=False)
     return html.Div([
-        html.H3(f'Most recent win: {most_recent_game_date}', style = {
-            'text-decoration': 'underline'
-        }),
-        dcc.Markdown(f'''**Board**: {player_most_recent_win_df['board'][0]}
-        \n**Expansions**: {", ".join([col for col in ['prelude','venus','colonies','turmoil','bgg'] if player_most_recent_win_df[col].sum() == most_recent_game_df.shape[0]])}
-        \n**Award 1**: {player_most_recent_win_df['award_1_name'][0]} (funder = {player_most_recent_win_df['award_1_funder'][0]})
-        \n**Award 2**: {player_most_recent_win_df['award_2_name'][0]} (funder = {player_most_recent_win_df['award_2_funder'][0]})
-        \n**Award 3**: {player_most_recent_win_df['award_3_name'][0]} (funder = {player_most_recent_win_df['award_3_funder'][0]})
-        \n**Milestone 1**: {player_most_recent_win_df['milestone_1_name'][0]}
-        \n**Milestone 2**: {player_most_recent_win_df['milestone_2_name'][0]}
-        \n**Milestone 3**: {player_most_recent_win_df['milestone_3_name'][0]}'''
-        , className = 'p'),
-        dash_table.DataTable(
-            id='most-recent-player-win-table',
-            columns=[{"name": i, "id":i} for i in player_most_recent_win_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points','total_points']].set_index('player').T.reset_index().columns],
-            data=player_most_recent_win_df[['player','corporation','terraform_rating','award_1_points','award_2_points','award_3_points','milestone_1_points','milestone_2_points','milestone_3_points','num_greeneries','num_cities','num_colonies','num_greenery_adjacencies','card_points','total_points']].set_index('player').T.reset_index().to_dict('records'),
-            style_header={
-                'backgroundColor': 'rgb(30, 30, 30)',
-                'color': 'white'
-            },
-            style_data={
-                'backgroundColor': 'rgb(50, 50, 50)',
-                'color': 'white'
-            },
-            style_table={
-                'width':'50%',
-                'margin-left':'auto',
-                'margin-right':'auto'
-            },
-            include_headers_on_copy_paste=True
-        )
+        dcc.Graph(id='player-points-on-card-fig', figure=fig)
     ])
-
 
 if __name__ == '__main__': 
     app.run_server(port=8000, host='127.0.0.1', debug=True)
