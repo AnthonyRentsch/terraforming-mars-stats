@@ -236,5 +236,6 @@ unique_sorted_game_id_temp = pd.Series([x for _,x in sorted(zip(full_df.date, fu
 new_game_id_map = {game_id_temp: i+1 for i, game_id_temp in enumerate(unique_sorted_game_id_temp)}
 full_df['game_id'] = full_df['game_id_temp'].map(new_game_id_map)
 full_df.drop('game_id_temp', axis=1, inplace=True)
+full_df = full_df[['game_id'] + list(set(full_df.columns) - set(['game_id']))]
 
 full_df.to_csv('../terraforming-mars-stats.csv', index=False)
