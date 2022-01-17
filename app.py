@@ -208,6 +208,7 @@ def render_content(tab):
 #########################################################################################################
 #########################################################################################################
 
+### PLAYER STATISTICS ###
 @app.callback(
     Output('player-win-rate-div','children'),
     Input('player-win-rate-players-included-dropdown', 'value')
@@ -239,90 +240,6 @@ def get_player_win_rates_table(players_to_include):
             },
             include_headers_on_copy_paste=True
         )
-    ])
-
-@app.callback(
-    Output('player-elo-div', 'children'),
-    Input('player-elo-options-dropdown', 'value'),
-    Input('player-elo-score-function-dropdown', 'value'),
-    Input('player-elo-players-included-dropdown', 'value')
-)
-def make_player_elo_div(num_player_category, score_fun, included_players):
-
-    if num_player_category == 'all':
-        player_ratings_df = compute_historical_player_ratings(df = df, score_fun = score_fun)
-    elif num_player_category == 'two-player':
-        player_ratings_df = compute_historical_player_ratings(df = df[df.num_players==2], score_fun = score_fun)
-    elif num_player_category == 'non-two-player':
-        player_ratings_df = compute_historical_player_ratings(df = df[df.num_players!=2], score_fun = score_fun)
-    
-    player_ratings_plot = make_plotly_player_ts_ratings_plot(player_ratings_df[player_ratings_df.player.isin(included_players)])
-
-    most_recent_player_ratings_df = player_ratings_df[(player_ratings_df.player.isin(included_players)) & (player_ratings_df.date == max(player_ratings_df.date))][['player','rating']].sort_values(by='rating', ascending=False)
-    most_recent_player_ratings_df['rating'] = np.round(most_recent_player_ratings_df['rating'].astype(float), decimals = 0)
-    
-    return html.Div([
-        html.H3(f'Current ratings (as of {most_recent_game_date})'),
-        dash_table.DataTable(
-            id='player-ratings-table',
-            columns=[{"name": i, "id": i} for i in most_recent_player_ratings_df.columns],
-            data=most_recent_player_ratings_df.to_dict('records'),
-            style_header={
-                'backgroundColor': 'rgb(30, 30, 30)',
-                'color': 'white'
-            },
-            style_data={
-                'backgroundColor': 'rgb(50, 50, 50)',
-                'color': 'white'
-            },
-            style_table={
-                'width':'50%',
-                'margin-left':'auto',
-                'margin-right':'auto'
-            },
-            include_headers_on_copy_paste=True
-        ),
-        html.Br(),
-        dcc.Graph(id='player-rating-ts-fig', figure=player_ratings_plot)
-    ])
-
-@app.callback(
-    Output('corp-elo-div', 'children'),
-    Input('corp-elo-expansion-included-dropdown', 'value'),
-    Input('corp-elo-score-function-dropdown', 'value'),
-)
-def make_corp_elo_div(corps_to_display, score_fun):
-    corp_ratings_df = compute_historical_corp_ratings(df = df
-                                                      , score_fun=score_fun)
-    corp_ratings_plot = make_plotly_corp_ts_ratings_plot(corp_ratings_df = corp_ratings_df[corp_ratings_df.corporation_origin.isin(corps_to_display)]
-                                                         , df = df)
-
-    most_recent_corp_ratings_df = corp_ratings_df[(corp_ratings_df.corporation_origin.isin(corps_to_display)) & (corp_ratings_df.date == max(corp_ratings_df.date))][['corporation','corporation_origin','rating']].sort_values(by='rating', ascending=False)
-    most_recent_corp_ratings_df['rating'] = np.round(most_recent_corp_ratings_df['rating'].astype(float), decimals = 0)
-
-    return html.Div([
-        html.H3(f'Current ratings (as of {most_recent_game_date})'),
-        dash_table.DataTable(
-            id='corp-ratings-table',
-            columns=[{"name": i, "id": i} for i in most_recent_corp_ratings_df.columns],
-            data=most_recent_corp_ratings_df.to_dict('records'),
-            style_header={
-                'backgroundColor': 'rgb(30, 30, 30)',
-                'color': 'white'
-            },
-            style_data={
-                'backgroundColor': 'rgb(50, 50, 50)',
-                'color': 'white'
-            },
-            style_table={
-                'width':'50%',
-                'margin-left':'auto',
-                'margin-right':'auto'
-            },
-            include_headers_on_copy_paste=True
-        ),
-        html.Br(),
-        dcc.Graph(id='corp-rating-ts-fig', figure=corp_ratings_plot)
     ])
 
 @app.callback(
@@ -413,6 +330,92 @@ def make_player_points_on_card_div(player):
     fig.update_yaxes(showticklabels=False)
     return html.Div([
         dcc.Graph(id='player-points-on-card-fig', figure=fig)
+    ])
+
+### PLAYER ELO ###
+@app.callback(
+    Output('player-elo-div', 'children'),
+    Input('player-elo-options-dropdown', 'value'),
+    Input('player-elo-score-function-dropdown', 'value'),
+    Input('player-elo-players-included-dropdown', 'value')
+)
+def make_player_elo_div(num_player_category, score_fun, included_players):
+
+    if num_player_category == 'all':
+        player_ratings_df = compute_historical_player_ratings(df = df, score_fun = score_fun)
+    elif num_player_category == 'two-player':
+        player_ratings_df = compute_historical_player_ratings(df = df[df.num_players==2], score_fun = score_fun)
+    elif num_player_category == 'non-two-player':
+        player_ratings_df = compute_historical_player_ratings(df = df[df.num_players!=2], score_fun = score_fun)
+    
+    player_ratings_plot = make_plotly_player_ts_ratings_plot(player_ratings_df[player_ratings_df.player.isin(included_players)])
+
+    most_recent_player_ratings_df = player_ratings_df[(player_ratings_df.player.isin(included_players)) & (player_ratings_df.date == max(player_ratings_df.date))][['player','rating']].sort_values(by='rating', ascending=False)
+    most_recent_player_ratings_df['rating'] = np.round(most_recent_player_ratings_df['rating'].astype(float), decimals = 0)
+    
+    return html.Div([
+        html.H3(f'Current ratings (as of {most_recent_game_date})'),
+        dash_table.DataTable(
+            id='player-ratings-table',
+            columns=[{"name": i, "id": i} for i in most_recent_player_ratings_df.columns],
+            data=most_recent_player_ratings_df.to_dict('records'),
+            style_header={
+                'backgroundColor': 'rgb(30, 30, 30)',
+                'color': 'white'
+            },
+            style_data={
+                'backgroundColor': 'rgb(50, 50, 50)',
+                'color': 'white'
+            },
+            style_table={
+                'width':'50%',
+                'margin-left':'auto',
+                'margin-right':'auto'
+            },
+            include_headers_on_copy_paste=True
+        ),
+        html.Br(),
+        dcc.Graph(id='player-rating-ts-fig', figure=player_ratings_plot)
+    ])
+
+### CORP ELO ###
+@app.callback(
+    Output('corp-elo-div', 'children'),
+    Input('corp-elo-expansion-included-dropdown', 'value'),
+    Input('corp-elo-score-function-dropdown', 'value'),
+)
+def make_corp_elo_div(corps_to_display, score_fun):
+    corp_ratings_df = compute_historical_corp_ratings(df = df
+                                                      , score_fun=score_fun)
+    corp_ratings_plot = make_plotly_corp_ts_ratings_plot(corp_ratings_df = corp_ratings_df[corp_ratings_df.corporation_origin.isin(corps_to_display)]
+                                                         , df = df)
+
+    most_recent_corp_ratings_df = corp_ratings_df[(corp_ratings_df.corporation_origin.isin(corps_to_display)) & (corp_ratings_df.date == max(corp_ratings_df.date))][['corporation','corporation_origin','rating']].sort_values(by='rating', ascending=False)
+    most_recent_corp_ratings_df['rating'] = np.round(most_recent_corp_ratings_df['rating'].astype(float), decimals = 0)
+
+    return html.Div([
+        html.H3(f'Current ratings (as of {most_recent_game_date})'),
+        dash_table.DataTable(
+            id='corp-ratings-table',
+            columns=[{"name": i, "id": i} for i in most_recent_corp_ratings_df.columns],
+            data=most_recent_corp_ratings_df.to_dict('records'),
+            style_header={
+                'backgroundColor': 'rgb(30, 30, 30)',
+                'color': 'white'
+            },
+            style_data={
+                'backgroundColor': 'rgb(50, 50, 50)',
+                'color': 'white'
+            },
+            style_table={
+                'width':'50%',
+                'margin-left':'auto',
+                'margin-right':'auto'
+            },
+            include_headers_on_copy_paste=True
+        ),
+        html.Br(),
+        dcc.Graph(id='corp-rating-ts-fig', figure=corp_ratings_plot)
     ])
 
 if __name__ == '__main__': 
